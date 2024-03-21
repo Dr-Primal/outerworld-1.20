@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "outerworld",
+	"version": "${version}",
+	"name": "OuterWorld",
+	"description": "Adds a new dimension called The Outer World, with lots of places to explore!",
+	"authors": [
+		"Primal"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/outerworld/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.primal.outerworld.OuterWorld"
+		],
+		"client": [
+			"net.primal.outerworld.OuterWorldClient"
+		],
+		"fabric-datagen": [
+			"net.primal.outerworld.OuterWorldDataGenerator"
+		]
+	},
+	"mixins": [
+		"outerworld.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

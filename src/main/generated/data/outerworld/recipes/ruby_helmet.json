@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "R": {
+      "item": "outerworld:ruby"
+    }
+  },
+  "pattern": [
+    "RRR",
+    "R R",
+    "   "
+  ],
+  "result": {
+    "item": "outerworld:ruby_helmet"
+  },
+  "show_notification": true
+}

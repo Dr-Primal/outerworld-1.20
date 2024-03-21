@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "outerworld:block/autumn_maple_slab"
+    },
+    "type=double": {
+      "model": "outerworld:block/autumn_maple_planks"
+    },
+    "type=top": {
+      "model": "outerworld:block/autumn_maple_slab_top"
+    }
+  }
+}

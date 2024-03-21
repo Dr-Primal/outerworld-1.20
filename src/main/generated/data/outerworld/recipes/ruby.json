@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "outerworld:ruby_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "outerworld:ruby"
+  }
+}

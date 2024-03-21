@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "outerworld:autumn_maple_planks"
+    }
+  ],
+  "result": {
+    "item": "outerworld:autumn_maple_button"
+  }
+}

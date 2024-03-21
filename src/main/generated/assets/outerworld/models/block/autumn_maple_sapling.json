@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "outerworld:block/autumn_maple_sapling"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "outerworld:block/autumn_maple_planks",
+    "side": "outerworld:block/autumn_maple_planks",
+    "top": "outerworld:block/autumn_maple_planks"
+  }
+}

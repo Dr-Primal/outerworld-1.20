@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "outerworld:ruby_helmet",
+    "outerworld:ruby_chestplate",
+    "outerworld:ruby_leggings",
+    "outerworld:ruby_boots"
+  ]
+}

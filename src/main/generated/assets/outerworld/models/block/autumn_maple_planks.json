@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "outerworld:block/autumn_maple_planks"
+  }
+}

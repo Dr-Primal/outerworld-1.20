@@ -1,0 +1,14 @@
+// 1.20.1	2024-03-20T23:28:08.0402843	OuterWorld/Tags for minecraft:block
+383d83cd2124e98a9af600eaedc3391b21b0910d data\minecraft\tags\blocks\logs_that_burn.json
+2fac769749fc601a0cb2ad5f3d8decc413d6c6a6 data\minecraft\tags\blocks\wooden_doors.json
+04e742a915a69923975d74be65e0b9dd83ba9608 data\minecraft\tags\blocks\wooden_slabs.json
+b362e066821d3d4a441d8525877e060b79d116b2 data\minecraft\tags\blocks\wooden_pressure_plates.json
+f63df9f284f92eb5a2a6837d80a753bf0dd0cfe3 data\minecraft\tags\blocks\mineable\pickaxe.json
+bb76f2ef5db51794a9c28109cbf13413d6a98033 data\minecraft\tags\blocks\wooden_stairs.json
+c3ab434ab42971b73fd443258167a4fc02b649e5 data\minecraft\tags\blocks\fence_gates.json
+441dbd45f14045d7c749603f0fd1be3a3857e917 data\minecraft\tags\blocks\fences.json
+ed619e4fdc71804c43dca764f97c598078a67ab8 data\minecraft\tags\blocks\mineable\axe.json
+10065c04bc5ececb57810384d127fdc29c05c22f data\minecraft\tags\blocks\mineable\hoe.json
+f63df9f284f92eb5a2a6837d80a753bf0dd0cfe3 data\minecraft\tags\blocks\needs_iron_tool.json
+9ed3a6e97f67248c0a780b366d4afdfc53704fd7 data\minecraft\tags\blocks\wooden_buttons.json
+26ce0517f4a66f301e6db8d7530613e660ff676a data\minecraft\tags\blocks\wooden_trapdoors.json

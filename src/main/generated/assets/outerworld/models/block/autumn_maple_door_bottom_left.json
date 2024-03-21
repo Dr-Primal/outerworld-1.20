@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_left",
+  "textures": {
+    "bottom": "outerworld:block/autumn_maple_door_bottom",
+    "top": "outerworld:block/autumn_maple_door_top"
+  }
+}

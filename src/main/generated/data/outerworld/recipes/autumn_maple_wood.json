@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "M": {
+      "item": "outerworld:autumn_maple_log"
+    }
+  },
+  "pattern": [
+    "MM ",
+    "MM ",
+    "   "
+  ],
+  "result": {
+    "count": 3,
+    "item": "outerworld:autumn_maple_wood"
+  },
+  "show_notification": true
+}

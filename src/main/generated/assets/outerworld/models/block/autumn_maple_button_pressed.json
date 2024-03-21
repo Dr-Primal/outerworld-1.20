@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "outerworld:block/autumn_maple_planks"
+  }
+}

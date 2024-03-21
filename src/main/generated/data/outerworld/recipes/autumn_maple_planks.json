@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "outerworld:autumn_maple_logs"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "outerworld:autumn_maple_planks"
+  }
+}

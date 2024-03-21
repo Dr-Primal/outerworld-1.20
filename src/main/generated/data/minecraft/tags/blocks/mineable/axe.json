@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "outerworld:autumn_maple_log",
+    "outerworld:autumn_maple_wood",
+    "outerworld:stripped_autumn_maple_log",
+    "outerworld:stripped_autumn_maple_wood",
+    "outerworld:autumn_maple_planks",
+    "outerworld:autumn_maple_stairs",
+    "outerworld:autumn_maple_slab",
+    "outerworld:autumn_maple_button",
+    "outerworld:autumn_maple_pressure_plate",
+    "outerworld:autumn_maple_fence",
+    "outerworld:autumn_maple_fence_gate",
+    "outerworld:autumn_maple_door",
+    "outerworld:autumn_maple_trapdoor",
+    "outerworld:autumn_maple_wall_sign",
+    "outerworld:autumn_maple_standing_sign",
+    "outerworld:autumn_maple_hanging_sign",
+    "outerworld:autumn_maple_wall_hanging_sign"
+  ]
+}

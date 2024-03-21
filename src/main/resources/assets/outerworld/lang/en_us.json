@@ -1,0 +1,56 @@
+{
+  "item.outerworld.ruby": "Ruby",
+
+  "item.outerworld.ruby_sword": "Ruby Sword",
+  "item.outerworld.ruby_pickaxe": "Ruby Pickaxe",
+  "item.outerworld.ruby_axe": "Ruby Axe",
+  "item.outerworld.ruby_shovel": "Ruby Shovel",
+  "item.outerworld.ruby_hoe": "Ruby Hoe",
+
+  "item.outerworld.ruby_helmet": "Ruby Helmet",
+  "item.outerworld.ruby_chestplate": "Ruby Chestplate",
+  "item.outerworld.ruby_leggings": "Ruby Leggings",
+  "item.outerworld.ruby_boots": "Ruby Boots",
+
+  "item.outerworld.autumn_samara":  "Autumn Samara",
+
+
+
+  "item.outerworld.autumn_maple_boat": "Autumn Maple Boat",
+  "item.outerworld.autumn_maple_chest_boat": "Autumn Maple Boat With Chest",
+
+
+
+  "block.outerworld.purple_ice": "Purple Ice",
+  "block.outerworld.ruby_block": "Block of Ruby",
+
+
+
+  "block.outerworld.autumn_maple_log": "Autumn Maple Log",
+  "block.outerworld.autumn_maple_wood": "Autumn Maple Wood",
+  "block.outerworld.stripped_autumn_maple_log": "Stripped Autumn Maple Log",
+  "block.outerworld.stripped_autumn_maple_wood": "Stripped Autumn Maple Wood",
+  "block.outerworld.autumn_maple_planks": "Autumn Maple Planks",
+  "block.outerworld.autumn_maple_stairs": "Autumn Maple Stairs",
+  "block.outerworld.autumn_maple_slab": "Autumn Maple Slab",
+  "block.outerworld.autumn_maple_button": "Autumn Maple Button",
+  "block.outerworld.autumn_maple_pressure_plate": "Autumn Maple Pressure Plate",
+  "block.outerworld.autumn_maple_fence": "Autumn Maple Fence",
+  "block.outerworld.autumn_maple_fence_gate": "Autumn Maple Fence Gate",
+  "block.outerworld.autumn_maple_door": "Autumn Maple Door",
+  "block.outerworld.autumn_maple_trapdoor": "Autumn Maple Trapdoor",
+
+  "block.outerworld.autumn_maple_standing_sign": "Autumn Maple Sign",
+  "block.outerworld.autumn_maple_wall_sign": "Autumn Maple Sign",
+
+  "block.outerworld.autumn_maple_hanging_sign": "Autumn Maple Hanging Sign",
+  "block.outerworld.hanging_autumn_maple_wall_sign": "Autumn Maple Hanging Sign",
+
+  "block.outerworld.autumn_maple_leaves": "Autumn Maple Leaves",
+
+  "block.outerworld.autumn_maple_sapling": "Autumn Maple Sapling",
+
+
+  "itemgroup.outer_world_blocks": "Outer World Blocks",
+  "itemgroup.outer_world_items": "Outer World Items"
+}
