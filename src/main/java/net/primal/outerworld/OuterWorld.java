@@ -8,6 +8,7 @@ import net.primal.outerworld.block.OuterWorldBlocks;
 import net.primal.outerworld.entity.OuterWorldBoats;
 import net.primal.outerworld.item.OuterWorldItemGroups;
 import net.primal.outerworld.item.OuterWorldItems;
+import net.primal.outerworld.particle.OuterWorldParticles;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,6 +22,7 @@ public class OuterWorld implements ModInitializer {
 		OuterWorldItemGroups.registerItemGroups();
 		OuterWorldItems.registerOWItems();
 		OuterWorldBoats.registerBoats();
+		OuterWorldParticles.registerParticles();
 
 		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(OuterWorldBlocks.AUTUMN_MAPLE_SAPLING.asItem(), 0.3f);
 		ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(OuterWorldItems.AUTUMN_SAMARA, 0.65f);

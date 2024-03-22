@@ -4,12 +4,15 @@ import com.terraformersmc.terraform.boat.api.client.TerraformBoatClientHelper;
 import com.terraformersmc.terraform.sign.SpriteIdentifierRegistry;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.particle.v1.ParticleFactoryRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.TexturedRenderLayers;
 import net.minecraft.client.util.SpriteIdentifier;
 import net.primal.outerworld.block.OuterWorldBlocks;
 import net.primal.outerworld.entity.OuterWorldBoats;
+import net.primal.outerworld.particle.AutumnMapleLeavesParticle;
+import net.primal.outerworld.particle.OuterWorldParticles;
 
 public class OuterWorldClient implements ClientModInitializer {
     @Override
@@ -33,5 +36,7 @@ public class OuterWorldClient implements ClientModInitializer {
                         OuterWorldBlocks.AUTUMN_MAPLE_HANGING_SIGN_TEXTURE));
 
         TerraformBoatClientHelper.registerModelLayers(OuterWorldBoats.AUTUMN_MAPLE_BOAT_ID, false);
+
+        ParticleFactoryRegistry.getInstance().register(OuterWorldParticles.AUTUMN_MAPLE_LEAVES, AutumnMapleLeavesParticle.Factory::new);
     }
 }

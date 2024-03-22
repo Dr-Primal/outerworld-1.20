@@ -4,7 +4,6 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
-import net.primal.outerworld.OuterWorld;
 import net.primal.outerworld.block.OuterWorldBlocks;
 import net.primal.outerworld.item.OuterWorldItems;
 import net.primal.outerworld.util.OuterWorldTags;
