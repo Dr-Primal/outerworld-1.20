@@ -9,6 +9,8 @@ import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.TexturedRenderLayers;
 import net.minecraft.client.util.SpriteIdentifier;
+import net.minecraft.screen.PlayerScreenHandler;
+import net.minecraft.util.Identifier;
 import net.primal.outerworld.block.OuterWorldBlocks;
 import net.primal.outerworld.entity.OuterWorldBoats;
 import net.primal.outerworld.particle.AutumnMapleLeavesParticle;

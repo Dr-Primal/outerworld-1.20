@@ -9,6 +9,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
+import net.primal.outerworld.particle.OuterWorldParticles;
 
 public class AutumnMapleLeavesBlock extends LeavesBlock {
     public AutumnMapleLeavesBlock(Settings settings) {
@@ -26,7 +27,7 @@ public class AutumnMapleLeavesBlock extends LeavesBlock {
         if (CherryLeavesBlock.isFaceFullSquare(blockState.getCollisionShape(world, blockPos), Direction.UP)) {
             return;
         }
-        ParticleUtil.spawnParticle(world, pos, random, ParticleTypes.CHERRY_LEAVES);
+        ParticleUtil.spawnParticle(world, pos, random, OuterWorldParticles.AUTUMN_MAPLE_LEAVES);
         //Make Custom Particle For Maple Leaves TODO;
     }
 }
