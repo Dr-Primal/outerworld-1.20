@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "outerworld:primuberant_log",
+    "outerworld:primuberant_wood",
+    "outerworld:stripped_primuberant_log",
+    "outerworld:stripped_primuberant_wood"
+  ]
+}

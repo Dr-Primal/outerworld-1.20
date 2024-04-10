@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "outerworld:block/primuberant_slab"
+    },
+    "type=double": {
+      "model": "outerworld:block/primuberant_planks"
+    },
+    "type=top": {
+      "model": "outerworld:block/primuberant_slab_top"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "outerworld:primuberant_logs"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "outerworld:primuberant_planks"
+  }
+}

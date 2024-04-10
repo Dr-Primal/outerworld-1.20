@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_left",
+  "textures": {
+    "bottom": "outerworld:block/primuberant_door_bottom",
+    "top": "outerworld:block/primuberant_door_top"
+  }
+}

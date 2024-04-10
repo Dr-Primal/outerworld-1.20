@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "outerworld:block/stripped_primuberant_log",
+    "side": "outerworld:block/stripped_primuberant_log"
+  }
+}

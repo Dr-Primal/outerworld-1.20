@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "outerworld:primuberant_planks"
+    }
+  ],
+  "result": {
+    "item": "outerworld:primuberant_button"
+  }
+}

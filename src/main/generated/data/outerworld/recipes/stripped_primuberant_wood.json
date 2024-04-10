@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "M": {
+      "item": "outerworld:stripped_primuberant_log"
+    }
+  },
+  "pattern": [
+    "MM ",
+    "MM ",
+    "   "
+  ],
+  "result": {
+    "count": 3,
+    "item": "outerworld:stripped_primuberant_wood"
+  },
+  "show_notification": true
+}
