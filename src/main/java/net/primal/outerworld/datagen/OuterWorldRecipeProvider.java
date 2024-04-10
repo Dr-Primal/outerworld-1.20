@@ -30,7 +30,7 @@ public class OuterWorldRecipeProvider extends FabricRecipeProvider {
 
 //Autumn Maple Wood Set
 
-        //Autumn Maple Wood
+        //Woods
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.AUTUMN_MAPLE_WOOD, 3)
                 .pattern("MM ")
                 .pattern("MM ")
@@ -39,8 +39,16 @@ public class OuterWorldRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(OuterWorldBlocks.AUTUMN_MAPLE_LOG.asItem()),
                         conditionsFromItem(OuterWorldBlocks.AUTUMN_MAPLE_LOG.asItem()))
                 .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.AUTUMN_MAPLE_WOOD.asItem())));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.PRIMUBERANT_WOOD, 3)
+                .pattern("MM ")
+                .pattern("MM ")
+                .pattern("   ")
+                .input('M', OuterWorldBlocks.PRIMUBERANT_LOG.asItem())
+                .criterion(hasItem(OuterWorldBlocks.PRIMUBERANT_LOG.asItem()),
+                        conditionsFromItem(OuterWorldBlocks.PRIMUBERANT_LOG.asItem()))
+                .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.PRIMUBERANT_WOOD.asItem())));
 
-        //Stripped Autumn Maple Wood
+        //Stripped Woods
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.STRIPPED_AUTUMN_MAPLE_WOOD.asItem(), 3)
                 .pattern("MM ")
                 .pattern("MM ")
@@ -49,66 +57,110 @@ public class OuterWorldRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(OuterWorldBlocks.STRIPPED_AUTUMN_MAPLE_LOG.asItem()),
                         conditionsFromItem(OuterWorldBlocks.STRIPPED_AUTUMN_MAPLE_LOG.asItem()))
                 .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.STRIPPED_AUTUMN_MAPLE_WOOD.asItem())));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.STRIPPED_PRIMUBERANT_WOOD.asItem(), 3)
+                .pattern("MM ")
+                .pattern("MM ")
+                .pattern("   ")
+                .input('M', OuterWorldBlocks.STRIPPED_PRIMUBERANT_LOG.asItem())
+                .criterion(hasItem(OuterWorldBlocks.STRIPPED_PRIMUBERANT_LOG.asItem()),
+                        conditionsFromItem(OuterWorldBlocks.STRIPPED_PRIMUBERANT_LOG.asItem()))
+                .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.STRIPPED_PRIMUBERANT_WOOD.asItem())));
 
-        //Autumn Maple Planks
+        //Planks
         offerPlanksRecipe(exporter, OuterWorldBlocks.AUTUMN_MAPLE_PLANKS.asItem(), OuterWorldTags.Items.AUTUMN_MAPLE_LOGS, 4);
+        offerPlanksRecipe(exporter, OuterWorldBlocks.PRIMUBERANT_PLANKS.asItem(), OuterWorldTags.Items.PRIMUBERANT_LOGS, 4);
 
-        //Autumn Maple Stairs
+
+        //Wooden Stairs
         createStairsRecipe(OuterWorldBlocks.AUTUMN_MAPLE_STAIRS.asItem(), Ingredient.ofItems(OuterWorldBlocks.AUTUMN_MAPLE_PLANKS.asItem()))
                 .criterion(hasItem(OuterWorldBlocks.AUTUMN_MAPLE_PLANKS.asItem()),
                         conditionsFromItem(OuterWorldBlocks.AUTUMN_MAPLE_PLANKS.asItem()))
                 .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.AUTUMN_MAPLE_STAIRS.asItem())));
+        createStairsRecipe(OuterWorldBlocks.PRIMUBERANT_STAIRS.asItem(), Ingredient.ofItems(OuterWorldBlocks.PRIMUBERANT_PLANKS.asItem()))
+                .criterion(hasItem(OuterWorldBlocks.PRIMUBERANT_PLANKS.asItem()),
+                        conditionsFromItem(OuterWorldBlocks.PRIMUBERANT_PLANKS.asItem()))
+                .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.PRIMUBERANT_STAIRS.asItem())));
 
-        //Autumn Maple Slab
+        //Wooden Slabs
         offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.AUTUMN_MAPLE_SLAB, OuterWorldBlocks.AUTUMN_MAPLE_PLANKS);
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.PRIMUBERANT_SLAB, OuterWorldBlocks.PRIMUBERANT_PLANKS);
 
-        //Autumn Maple Button
+
+        //Wooden Buttons
         offerSingleOutputShapelessRecipe(exporter, OuterWorldBlocks.AUTUMN_MAPLE_BUTTON, OuterWorldBlocks.AUTUMN_MAPLE_PLANKS, null);
+        offerSingleOutputShapelessRecipe(exporter, OuterWorldBlocks.PRIMUBERANT_BUTTON, OuterWorldBlocks.PRIMUBERANT_PLANKS, null);
 
-        //Autumn Maple Pressure Plate
+
+        //Wooden Pressure Plates
         offerPressurePlateRecipe(exporter, OuterWorldBlocks.AUTUMN_MAPLE_PRESSURE_PLATE, OuterWorldBlocks.AUTUMN_MAPLE_PLANKS);
+        offerPressurePlateRecipe(exporter, OuterWorldBlocks.PRIMUBERANT_PRESSURE_PLATE, OuterWorldBlocks.PRIMUBERANT_PLANKS);
 
-        //Autumn Maple Fence
+
+        //Fences
         createFenceRecipe(OuterWorldBlocks.AUTUMN_MAPLE_FENCE.asItem(), Ingredient.ofItems(OuterWorldBlocks.AUTUMN_MAPLE_PLANKS.asItem()))
                 .criterion(hasItem(OuterWorldBlocks.AUTUMN_MAPLE_PLANKS.asItem()),
                         conditionsFromItem(OuterWorldBlocks.AUTUMN_MAPLE_PLANKS.asItem()))
                 .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.AUTUMN_MAPLE_FENCE.asItem())));
+        createFenceRecipe(OuterWorldBlocks.PRIMUBERANT_FENCE.asItem(), Ingredient.ofItems(OuterWorldBlocks.PRIMUBERANT_PLANKS.asItem()))
+                .criterion(hasItem(OuterWorldBlocks.PRIMUBERANT_PLANKS.asItem()),
+                        conditionsFromItem(OuterWorldBlocks.PRIMUBERANT_PLANKS.asItem()))
+                .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.PRIMUBERANT_FENCE.asItem())));
 
-        //Autumn Maple Fence Gate
+        //Fence Gates
         createFenceGateRecipe(OuterWorldBlocks.AUTUMN_MAPLE_FENCE_GATE.asItem(), Ingredient.ofItems(OuterWorldBlocks.AUTUMN_MAPLE_PLANKS.asItem()))
                 .criterion(hasItem(OuterWorldBlocks.AUTUMN_MAPLE_PLANKS.asItem()),
                         conditionsFromItem(OuterWorldBlocks.AUTUMN_MAPLE_PLANKS.asItem()))
                 .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.AUTUMN_MAPLE_FENCE_GATE.asItem())));
+        createFenceGateRecipe(OuterWorldBlocks.PRIMUBERANT_FENCE_GATE.asItem(), Ingredient.ofItems(OuterWorldBlocks.PRIMUBERANT_PLANKS.asItem()))
+                .criterion(hasItem(OuterWorldBlocks.PRIMUBERANT_PLANKS.asItem()),
+                        conditionsFromItem(OuterWorldBlocks.PRIMUBERANT_PLANKS.asItem()))
+                .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.PRIMUBERANT_FENCE_GATE.asItem())));
 
-        //Autumn Maple Door
+        //Wooden Doors
         createDoorRecipe(OuterWorldBlocks.AUTUMN_MAPLE_DOOR.asItem(), Ingredient.ofItems(OuterWorldBlocks.AUTUMN_MAPLE_PLANKS.asItem()))
                 .criterion(hasItem(OuterWorldBlocks.AUTUMN_MAPLE_PLANKS.asItem()),
                         conditionsFromItem(OuterWorldBlocks.AUTUMN_MAPLE_PLANKS.asItem()))
                 .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.AUTUMN_MAPLE_DOOR.asItem())));
+        createDoorRecipe(OuterWorldBlocks.PRIMUBERANT_DOOR.asItem(), Ingredient.ofItems(OuterWorldBlocks.PRIMUBERANT_PLANKS.asItem()))
+                .criterion(hasItem(OuterWorldBlocks.PRIMUBERANT_PLANKS.asItem()),
+                        conditionsFromItem(OuterWorldBlocks.PRIMUBERANT_PLANKS.asItem()))
+                .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.PRIMUBERANT_DOOR.asItem())));
 
-        //Autumn Maple Trapdoor
+        //Wooden Trapdoors
         createTrapdoorRecipe(OuterWorldBlocks.AUTUMN_MAPLE_TRAPDOOR.asItem(), Ingredient.ofItems(OuterWorldBlocks.AUTUMN_MAPLE_PLANKS.asItem()))
                 .criterion(hasItem(OuterWorldBlocks.AUTUMN_MAPLE_PLANKS.asItem()),
                         conditionsFromItem(OuterWorldBlocks.AUTUMN_MAPLE_PLANKS.asItem()))
                 .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.AUTUMN_MAPLE_TRAPDOOR.asItem())));
+        createTrapdoorRecipe(OuterWorldBlocks.PRIMUBERANT_TRAPDOOR.asItem(), Ingredient.ofItems(OuterWorldBlocks.PRIMUBERANT_PLANKS.asItem()))
+                .criterion(hasItem(OuterWorldBlocks.PRIMUBERANT_PLANKS.asItem()),
+                        conditionsFromItem(OuterWorldBlocks.PRIMUBERANT_PLANKS.asItem()))
+                .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.PRIMUBERANT_TRAPDOOR.asItem())));
 
-        //Autumn Maple Sign
+        //Signs
         createSignRecipe(OuterWorldItems.AUTUMN_MAPLE_SIGN, Ingredient.ofItems(OuterWorldBlocks.AUTUMN_MAPLE_PLANKS.asItem()))
                 .criterion(hasItem(OuterWorldBlocks.AUTUMN_MAPLE_PLANKS.asItem()),
                         conditionsFromItem(OuterWorldBlocks.AUTUMN_MAPLE_PLANKS.asItem()))
                 .criterion(hasItem(Items.STICK),
                         conditionsFromItem(Items.STICK))
                 .offerTo(exporter, new Identifier(getRecipeName(OuterWorldItems.AUTUMN_MAPLE_SIGN)));
+        createSignRecipe(OuterWorldItems.PRIMUBERANT_SIGN, Ingredient.ofItems(OuterWorldBlocks.PRIMUBERANT_PLANKS.asItem()))
+                .criterion(hasItem(OuterWorldBlocks.PRIMUBERANT_PLANKS.asItem()),
+                        conditionsFromItem(OuterWorldBlocks.PRIMUBERANT_PLANKS.asItem()))
+                .criterion(hasItem(Items.STICK),
+                        conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(OuterWorldItems.PRIMUBERANT_SIGN)));
 
-        //Autumn Maple Hanging Sign
+        //Hanging Signs
         offerHangingSignRecipe(exporter, OuterWorldItems.HANGING_AUTUMN_MAPLE_SIGN, OuterWorldBlocks.STRIPPED_AUTUMN_MAPLE_LOG.asItem());
+        offerHangingSignRecipe(exporter, OuterWorldItems.HANGING_PRIMUBERANT_SIGN, OuterWorldBlocks.STRIPPED_PRIMUBERANT_LOG.asItem());
 
-        //Autumn Maple Boat
-
+        //Boats
         offerBoatRecipe(exporter, OuterWorldItems.AUTUMN_MAPLE_BOAT, OuterWorldBlocks.AUTUMN_MAPLE_PLANKS.asItem());
-        //Autumn Maple Boat With Chest
+        offerBoatRecipe(exporter, OuterWorldItems.PRIMUBERANT_BOAT, OuterWorldBlocks.PRIMUBERANT_PLANKS.asItem());
 
+        //Boat With Chests
         offerChestBoatRecipe(exporter, OuterWorldItems.AUTUMN_MAPLE_CHEST_BOAT, OuterWorldItems.AUTUMN_MAPLE_BOAT);
+        offerChestBoatRecipe(exporter, OuterWorldItems.PRIMUBERANT_CHEST_BOAT, OuterWorldItems.PRIMUBERANT_BOAT);
 
 
 //Ruby Tools and Armor

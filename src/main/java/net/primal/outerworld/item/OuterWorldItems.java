@@ -21,6 +21,13 @@ public class OuterWorldItems {
             TerraformBoatItemHelper.registerBoatItem(OuterWorldBoats.AUTUMN_MAPLE_CHEST_BOAT_ID,
                     OuterWorldBoats.AUTUMN_MAPLE_BOAT_KEY, true);
 
+    public static final Item PRIMUBERANT_BOAT =
+            TerraformBoatItemHelper.registerBoatItem(OuterWorldBoats.PRIMUBERANT_BOAT_ID,
+                    OuterWorldBoats.PRIMUBERANT_BOAT_KEY, false);
+    public static final Item PRIMUBERANT_CHEST_BOAT =
+            TerraformBoatItemHelper.registerBoatItem(OuterWorldBoats.PRIMUBERANT_CHEST_BOAT_ID,
+                    OuterWorldBoats.PRIMUBERANT_BOAT_KEY, true);
+
     //Signs
     public static final Item AUTUMN_MAPLE_SIGN = registerItem("autumn_maple_sign",
             new SignItem(new FabricItemSettings().maxCount(16),
@@ -28,6 +35,13 @@ public class OuterWorldItems {
     public static final Item HANGING_AUTUMN_MAPLE_SIGN = registerItem("autumn_maple_hanging_sign",
             new HangingSignItem(OuterWorldBlocks.HANGING_AUTUMN_MAPLE_SIGN,
                     OuterWorldBlocks.WALL_HANGING_AUTUMN_MAPLE_SIGN, new FabricItemSettings().maxCount(16)));
+
+    public static final Item PRIMUBERANT_SIGN = registerItem("primuberant_sign",
+            new SignItem(new FabricItemSettings().maxCount(16),
+                    OuterWorldBlocks.STANDING_PRIMUBERANT_SIGN, OuterWorldBlocks.WALL_PRIMUBERANT_SIGN));
+    public static final Item HANGING_PRIMUBERANT_SIGN = registerItem("primuberant_hanging_sign",
+            new HangingSignItem(OuterWorldBlocks.HANGING_PRIMUBERANT_SIGN,
+                    OuterWorldBlocks.WALL_HANGING_PRIMUBERANT_SIGN, new FabricItemSettings().maxCount(16)));
 
     //Ruby Stuff
     public static final Item RUBY = registerItem("ruby",

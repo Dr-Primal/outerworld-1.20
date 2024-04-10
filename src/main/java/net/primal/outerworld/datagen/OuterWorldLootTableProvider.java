@@ -60,6 +60,26 @@ public class OuterWorldLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(OuterWorldBlocks.AUTUMN_MAPLE_DOOR, doorDrops(OuterWorldBlocks.AUTUMN_MAPLE_DOOR));
         addDrop(OuterWorldBlocks.AUTUMN_MAPLE_SLAB, slabDrops(OuterWorldBlocks.AUTUMN_MAPLE_SLAB));
 
+        addDrop(OuterWorldBlocks.PRIMUBERANT_LOG);
+        addDrop(OuterWorldBlocks.PRIMUBERANT_WOOD);
+        addDrop(OuterWorldBlocks.STRIPPED_PRIMUBERANT_LOG);
+        addDrop(OuterWorldBlocks.STRIPPED_PRIMUBERANT_WOOD);
+        addDrop(OuterWorldBlocks.PRIMUBERANT_PLANKS);
+        addDrop(OuterWorldBlocks.PRIMUBERANT_STAIRS);
+        addDrop(OuterWorldBlocks.PRIMUBERANT_BUTTON);
+        addDrop(OuterWorldBlocks.PRIMUBERANT_PRESSURE_PLATE);
+        addDrop(OuterWorldBlocks.PRIMUBERANT_FENCE);
+        addDrop(OuterWorldBlocks.PRIMUBERANT_FENCE_GATE);
+        addDrop(OuterWorldBlocks.PRIMUBERANT_TRAPDOOR);
+
+        addDrop(OuterWorldBlocks.STANDING_PRIMUBERANT_SIGN);
+        addDrop(OuterWorldBlocks.WALL_PRIMUBERANT_SIGN);
+        addDrop(OuterWorldBlocks.HANGING_PRIMUBERANT_SIGN);
+        addDrop(OuterWorldBlocks.WALL_HANGING_PRIMUBERANT_SIGN);
+
+        addDrop(OuterWorldBlocks.PRIMUBERANT_DOOR, doorDrops(OuterWorldBlocks.PRIMUBERANT_DOOR));
+        addDrop(OuterWorldBlocks.PRIMUBERANT_SLAB, slabDrops(OuterWorldBlocks.PRIMUBERANT_SLAB));
+
 
         addDrop(OuterWorldBlocks.AUTUMN_MAPLE_LEAVES,
                 autumnMapleLeavesDrops(

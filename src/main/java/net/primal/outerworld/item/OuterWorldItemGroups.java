@@ -38,6 +38,24 @@ public class OuterWorldItemGroups {
                     entries.add(OuterWorldItems.AUTUMN_MAPLE_SIGN);
                     entries.add(OuterWorldItems.HANGING_AUTUMN_MAPLE_SIGN);
 
+                    entries.add(OuterWorldBlocks.PRIMUBERANT_LOG);
+                    entries.add(OuterWorldBlocks.PRIMUBERANT_WOOD);
+                    entries.add(OuterWorldBlocks.STRIPPED_PRIMUBERANT_LOG);
+                    entries.add(OuterWorldBlocks.STRIPPED_PRIMUBERANT_WOOD);
+                    entries.add(OuterWorldBlocks.PRIMUBERANT_PLANKS);
+                    entries.add(OuterWorldBlocks.PRIMUBERANT_STAIRS);
+                    entries.add(OuterWorldBlocks.PRIMUBERANT_SLAB);
+                    entries.add(OuterWorldBlocks.PRIMUBERANT_BUTTON);
+                    entries.add(OuterWorldBlocks.PRIMUBERANT_PRESSURE_PLATE);
+                    entries.add(OuterWorldBlocks.PRIMUBERANT_FENCE);
+                    entries.add(OuterWorldBlocks.PRIMUBERANT_FENCE_GATE);
+                    entries.add(OuterWorldBlocks.PRIMUBERANT_DOOR);
+                    entries.add(OuterWorldBlocks.PRIMUBERANT_TRAPDOOR);
+                    entries.add(OuterWorldItems.PRIMUBERANT_BOAT);
+                    entries.add(OuterWorldItems.PRIMUBERANT_CHEST_BOAT);
+                    entries.add(OuterWorldItems.PRIMUBERANT_SIGN);
+                    entries.add(OuterWorldItems.HANGING_PRIMUBERANT_SIGN);
+
                     entries.add(OuterWorldBlocks.AUTUMN_MAPLE_LEAVES);
 
                 }).build());

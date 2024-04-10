@@ -28,7 +28,8 @@ public class OuterWorldClient implements ClientModInitializer {
 
         StrippableBlockRegistry.register(OuterWorldBlocks.AUTUMN_MAPLE_LOG, OuterWorldBlocks.STRIPPED_AUTUMN_MAPLE_LOG);
         StrippableBlockRegistry.register(OuterWorldBlocks.AUTUMN_MAPLE_WOOD, OuterWorldBlocks.STRIPPED_AUTUMN_MAPLE_WOOD);
-
+        StrippableBlockRegistry.register(OuterWorldBlocks.PRIMUBERANT_LOG, OuterWorldBlocks.STRIPPED_PRIMUBERANT_LOG);
+        StrippableBlockRegistry.register(OuterWorldBlocks.PRIMUBERANT_WOOD, OuterWorldBlocks.STRIPPED_PRIMUBERANT_WOOD);
 
         SpriteIdentifierRegistry.INSTANCE.addIdentifier
                 (new SpriteIdentifier(TexturedRenderLayers.SIGNS_ATLAS_TEXTURE,
@@ -38,6 +39,7 @@ public class OuterWorldClient implements ClientModInitializer {
                         OuterWorldBlocks.AUTUMN_MAPLE_HANGING_SIGN_TEXTURE));
 
         TerraformBoatClientHelper.registerModelLayers(OuterWorldBoats.AUTUMN_MAPLE_BOAT_ID, false);
+        TerraformBoatClientHelper.registerModelLayers(OuterWorldBoats.PRIMUBERANT_BOAT_ID, false);
 
         ParticleFactoryRegistry.getInstance().register(OuterWorldParticles.AUTUMN_MAPLE_LEAVES, AutumnMapleLeavesParticle.Factory::new);
     }

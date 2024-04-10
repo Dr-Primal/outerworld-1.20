@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "outerworld:autumn_maple_slab"
+    "outerworld:autumn_maple_slab",
+    "outerworld:primuberant_slab"
   ]
 }

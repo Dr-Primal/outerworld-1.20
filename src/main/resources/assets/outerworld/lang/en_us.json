@@ -18,11 +18,35 @@
 
   "item.outerworld.autumn_maple_boat": "Autumn Maple Boat",
   "item.outerworld.autumn_maple_chest_boat": "Autumn Maple Boat With Chest",
+  "item.outerworld.primuberant_boat": "Primuberant Boat",
+  "item.outerworld.primuberant_chest_boat": "Primuberant Boat With Chest",
 
 
 
   "block.outerworld.purple_ice": "Purple Ice",
   "block.outerworld.ruby_block": "Block of Ruby",
+
+
+
+  "block.outerworld.primuberant_log": "Primuberant Log",
+  "block.outerworld.primuberant_wood": "Primuberant Wood",
+  "block.outerworld.stripped_primuberant_log": "Stripped Primuberant Log",
+  "block.outerworld.stripped_primuberant_wood": "Stripped Primuberant Wood",
+  "block.outerworld.primuberant_planks": "Primuberant Planks",
+  "block.outerworld.primuberant_stairs": "Primuberant Stairs",
+  "block.outerworld.primuberant_slab": "Primuberant Slab",
+  "block.outerworld.primuberant_button": "Primuberant Button",
+  "block.outerworld.primuberant_pressure_plate": "Primuberant Pressure Plate",
+  "block.outerworld.primuberant_fence": "Primuberant Fence",
+  "block.outerworld.primuberant_fence_gate": "Primuberant Fence Gate",
+  "block.outerworld.primuberant_door": "Primuberant Door",
+  "block.outerworld.primuberant_trapdoor": "Primuberant Trapdoor",
+
+  "block.outerworld.primuberant_standing_sign": "Primuberant Sign",
+  "block.outerworld.primuberant_wall_sign": "Primuberant Sign",
+
+  "block.outerworld.primuberant_hanging_sign": "Primuberant Hanging Sign",
+  "block.outerworld.hanging_primuberant_wall_sign": "Primuberant Hanging Sign",
 
 
 

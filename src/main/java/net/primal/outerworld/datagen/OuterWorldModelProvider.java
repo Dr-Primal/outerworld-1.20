@@ -19,6 +19,9 @@ public class OuterWorldModelProvider extends FabricModelProvider {
         BlockStateModelGenerator.BlockTexturePool autumnMaplePool = blockStateModelGenerator.registerCubeAllModelTexturePool(OuterWorldBlocks.AUTUMN_MAPLE_PLANKS);
         autumnMaplePool.family(OuterWorldBlocks.AUTUMN_MAPLE_FAMILY);
 
+        BlockStateModelGenerator.BlockTexturePool primuberantPool = blockStateModelGenerator.registerCubeAllModelTexturePool(OuterWorldBlocks.PRIMUBERANT_PLANKS);
+        primuberantPool.family(OuterWorldBlocks.PRIMUBERANT_FAMILY);
+
         blockStateModelGenerator.registerSimpleCubeAll(OuterWorldBlocks.PURPLE_ICE);
         blockStateModelGenerator.registerSimpleCubeAll(OuterWorldBlocks.RUBY_BLOCK);
 
@@ -35,7 +38,23 @@ public class OuterWorldModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerHangingSign(OuterWorldBlocks.STRIPPED_AUTUMN_MAPLE_LOG, OuterWorldBlocks.HANGING_AUTUMN_MAPLE_SIGN, OuterWorldBlocks.WALL_HANGING_AUTUMN_MAPLE_SIGN);
 
         blockStateModelGenerator.registerDoor(OuterWorldBlocks.AUTUMN_MAPLE_DOOR);
-        blockStateModelGenerator.registerTrapdoor(OuterWorldBlocks.AUTUMN_MAPLE_TRAPDOOR);
+        blockStateModelGenerator.registerOrientableTrapdoor(OuterWorldBlocks.AUTUMN_MAPLE_TRAPDOOR);
+
+
+
+        blockStateModelGenerator.registerLog(OuterWorldBlocks.PRIMUBERANT_LOG).log(OuterWorldBlocks.PRIMUBERANT_LOG).wood(OuterWorldBlocks.PRIMUBERANT_WOOD);
+        blockStateModelGenerator.registerLog(OuterWorldBlocks.STRIPPED_PRIMUBERANT_LOG).log(OuterWorldBlocks.STRIPPED_PRIMUBERANT_LOG).wood(OuterWorldBlocks.STRIPPED_PRIMUBERANT_WOOD);
+
+        primuberantPool.stairs(OuterWorldBlocks.PRIMUBERANT_STAIRS);
+        primuberantPool.slab(OuterWorldBlocks.PRIMUBERANT_SLAB);
+        primuberantPool.button(OuterWorldBlocks.PRIMUBERANT_BUTTON);
+        primuberantPool.pressurePlate(OuterWorldBlocks.PRIMUBERANT_PRESSURE_PLATE);
+        primuberantPool.fence(OuterWorldBlocks.PRIMUBERANT_FENCE);
+        primuberantPool.fenceGate(OuterWorldBlocks.PRIMUBERANT_FENCE_GATE);
+        blockStateModelGenerator.registerHangingSign(OuterWorldBlocks.STRIPPED_PRIMUBERANT_LOG, OuterWorldBlocks.HANGING_PRIMUBERANT_SIGN, OuterWorldBlocks.WALL_HANGING_PRIMUBERANT_SIGN);
+
+        blockStateModelGenerator.registerDoor(OuterWorldBlocks.PRIMUBERANT_DOOR);
+        blockStateModelGenerator.registerOrientableTrapdoor(OuterWorldBlocks.PRIMUBERANT_TRAPDOOR);
 
         blockStateModelGenerator.registerTintableCross(OuterWorldBlocks.AUTUMN_MAPLE_SAPLING,
                 BlockStateModelGenerator.TintType.NOT_TINTED);
@@ -60,6 +79,9 @@ public class OuterWorldModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(OuterWorldItems.AUTUMN_MAPLE_BOAT, Models.GENERATED);
         itemModelGenerator.register(OuterWorldItems.AUTUMN_MAPLE_CHEST_BOAT, Models.GENERATED);
+
+        itemModelGenerator.register(OuterWorldItems.PRIMUBERANT_BOAT, Models.GENERATED);
+        itemModelGenerator.register(OuterWorldItems.PRIMUBERANT_CHEST_BOAT, Models.GENERATED);
 
     }
 }

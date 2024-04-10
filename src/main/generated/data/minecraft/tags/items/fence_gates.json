@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "outerworld:autumn_maple_fence_gate"
+    "outerworld:autumn_maple_fence_gate",
+    "outerworld:primuberant_fence_gate"
   ]
 }

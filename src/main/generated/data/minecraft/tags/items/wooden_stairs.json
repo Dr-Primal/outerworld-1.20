@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "outerworld:autumn_maple_stairs"
+    "outerworld:autumn_maple_stairs",
+    "outerworld:primuberant_stairs"
   ]
 }

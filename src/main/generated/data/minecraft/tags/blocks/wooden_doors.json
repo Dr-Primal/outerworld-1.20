@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "outerworld:autumn_maple_door"
+    "outerworld:autumn_maple_door",
+    "outerworld:primuberant_door"
   ]
 }

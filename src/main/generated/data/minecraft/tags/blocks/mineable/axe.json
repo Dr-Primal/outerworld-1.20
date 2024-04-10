@@ -17,6 +17,23 @@
     "outerworld:autumn_maple_wall_sign",
     "outerworld:autumn_maple_standing_sign",
     "outerworld:autumn_maple_hanging_sign",
-    "outerworld:autumn_maple_wall_hanging_sign"
+    "outerworld:autumn_maple_wall_hanging_sign",
+    "outerworld:primuberant_log",
+    "outerworld:primuberant_wood",
+    "outerworld:stripped_primuberant_log",
+    "outerworld:stripped_primuberant_wood",
+    "outerworld:primuberant_planks",
+    "outerworld:primuberant_stairs",
+    "outerworld:primuberant_slab",
+    "outerworld:primuberant_button",
+    "outerworld:primuberant_pressure_plate",
+    "outerworld:primuberant_fence",
+    "outerworld:primuberant_fence_gate",
+    "outerworld:primuberant_door",
+    "outerworld:primuberant_trapdoor",
+    "outerworld:primuberant_wall_sign",
+    "outerworld:primuberant_standing_sign",
+    "outerworld:primuberant_hanging_sign",
+    "outerworld:primuberant_wall_hanging_sign"
   ]
 }

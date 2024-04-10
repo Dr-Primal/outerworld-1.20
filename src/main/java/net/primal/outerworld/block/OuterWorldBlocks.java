@@ -38,6 +38,114 @@ public class OuterWorldBlocks {
                     .strength(5.0f, 6.0f)
                     .sounds(BlockSoundGroup.METAL)));
 
+    //Primuberant Wood Set
+    public static final Block PRIMUBERANT_LOG = registerBlock("primuberant_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)
+                    .mapColor(MapColor.OAK_TAN)
+                    .strength(2f)));
+    public static final Block PRIMUBERANT_WOOD = registerBlock("primuberant_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD)
+                    .mapColor(MapColor.OAK_TAN)
+                    .strength(2f)));
+    public static final Block STRIPPED_PRIMUBERANT_LOG = registerBlock("stripped_primuberant_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG)
+                    .mapColor(MapColor.YELLOW)
+                    .strength(2f)));
+    public static final Block STRIPPED_PRIMUBERANT_WOOD = registerBlock("stripped_primuberant_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD)
+                    .mapColor(MapColor.YELLOW)
+                    .strength(2f)));
+
+    public static final Block PRIMUBERANT_PLANKS = registerBlock("primuberant_planks",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)
+                    .mapColor(MapColor.PALE_YELLOW)
+                    .strength(2f)));
+
+    public static final Block PRIMUBERANT_STAIRS = registerBlock("primuberant_stairs",
+            new StairsBlock(OuterWorldBlocks.PRIMUBERANT_PLANKS.getDefaultState(),
+                    FabricBlockSettings.copyOf(Blocks.OAK_STAIRS)
+                            .mapColor(MapColor.PALE_YELLOW)
+                            .strength(2f)));
+    public static final Block PRIMUBERANT_SLAB = registerBlock("primuberant_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_SLAB)
+                    .mapColor(MapColor.BROWN)
+                    .strength(2f)));
+
+    public static final Block PRIMUBERANT_BUTTON = registerBlock("primuberant_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_BUTTON)
+                    .mapColor(MapColor.BROWN)
+                    .strength(0.5f)
+                    .collidable(false),
+                    BlockSetType.OAK, 30, true));
+    public static final Block PRIMUBERANT_PRESSURE_PLATE = registerBlock("primuberant_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE)
+                            .mapColor(MapColor.BROWN)
+                            .strength(0.5f),
+                    BlockSetType.OAK));
+
+    public static final Block PRIMUBERANT_FENCE = registerBlock("primuberant_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE)
+                    .mapColor(MapColor.BROWN)
+                    .strength(2f)));
+    public static final Block PRIMUBERANT_FENCE_GATE = registerBlock("primuberant_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.OAK_FENCE_GATE)
+                    .mapColor(MapColor.BROWN)
+                    .strength(2f),
+                    WoodType.OAK));
+
+    public static final Block PRIMUBERANT_DOOR = registerBlock("primuberant_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_DOOR)
+                    .mapColor(MapColor.BROWN)
+                    .strength(2f)
+                    .nonOpaque(),
+                    BlockSetType.OAK));
+    public static final Block PRIMUBERANT_TRAPDOOR = registerBlock("primuberant_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR)
+                    .mapColor(MapColor.BROWN)
+                    .strength(2f)
+                    .nonOpaque(),
+                    BlockSetType.OAK));
+
+    public static final Identifier PRIMUBERANT_SIGN_TEXTURE =
+            new Identifier(OuterWorld.MOD_ID, "entity/signs/primuberant");
+    public static final Identifier PRIMUBERANT_HANGING_SIGN_TEXTURE =
+            new Identifier(OuterWorld.MOD_ID, "entity/signs/hanging/primuberant");
+    public static final Identifier PRIMUBERANT_HANGING_GUI_SIGN_TEXTURE =
+            new Identifier(OuterWorld.MOD_ID, "textures/gui/hanging_signs/primuberant");
+
+    public static final Block STANDING_PRIMUBERANT_SIGN =
+            Registry.register(Registries.BLOCK,
+                    new Identifier(OuterWorld.MOD_ID, "primuberant_standing_sign"),
+                    new TerraformSignBlock(PRIMUBERANT_SIGN_TEXTURE,
+                            FabricBlockSettings.copy(Blocks.ACACIA_SIGN)
+                                    .mapColor(MapColor.PALE_YELLOW)));
+    public static final Block WALL_PRIMUBERANT_SIGN =
+            Registry.register(Registries.BLOCK,
+                    new Identifier(OuterWorld.MOD_ID, "primuberant_wall_sign"),
+                    new TerraformWallSignBlock(PRIMUBERANT_SIGN_TEXTURE,
+                            FabricBlockSettings.copyOf(Blocks.ACACIA_WALL_SIGN)
+                                    .dropsLike(STANDING_PRIMUBERANT_SIGN)
+                                    .mapColor(MapColor.BROWN)));
+    public static final Block HANGING_PRIMUBERANT_SIGN =
+            Registry.register(Registries.BLOCK,
+                    new Identifier(OuterWorld.MOD_ID, "primuberant_hanging_sign"),
+                    new TerraformHangingSignBlock(PRIMUBERANT_HANGING_SIGN_TEXTURE, PRIMUBERANT_HANGING_GUI_SIGN_TEXTURE,
+                            FabricBlockSettings.copyOf(Blocks.ACACIA_HANGING_SIGN)
+                                    .mapColor(MapColor.BROWN)));
+    public static final Block WALL_HANGING_PRIMUBERANT_SIGN =
+            Registry.register(Registries.BLOCK,
+                    new Identifier(OuterWorld.MOD_ID, "primuberant_wall_hanging_sign"),
+                    new TerraformWallHangingSignBlock(PRIMUBERANT_HANGING_SIGN_TEXTURE, PRIMUBERANT_HANGING_GUI_SIGN_TEXTURE,
+                            FabricBlockSettings.copyOf(Blocks.ACACIA_WALL_HANGING_SIGN)
+                                    .dropsLike(HANGING_PRIMUBERANT_SIGN)
+                                    .mapColor(MapColor.BROWN)));
+
+    public static final BlockFamily PRIMUBERANT_FAMILY =
+            BlockFamilies.register(OuterWorldBlocks.PRIMUBERANT_PLANKS)
+                    .sign(OuterWorldBlocks.STANDING_PRIMUBERANT_SIGN, OuterWorldBlocks.WALL_PRIMUBERANT_SIGN)
+                    .group("wooden").unlockCriterionName("has_planks").build();
+
     //Autumn Maple Wood Set
     public static final Block AUTUMN_MAPLE_LOG = registerBlock("autumn_maple_log",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)

@@ -18,6 +18,9 @@ public class OuterWorldTags {
         public static final TagKey<Item> AUTUMN_MAPLE_LOGS =
                 createTag("autumn_maple_logs");
 
+        public static final TagKey<Item> PRIMUBERANT_LOGS =
+                createTag("primuberant_logs");
+
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, new Identifier(OuterWorld.MOD_ID, name));
         }
