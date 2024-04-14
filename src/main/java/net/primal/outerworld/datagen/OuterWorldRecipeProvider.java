@@ -3,8 +3,10 @@ package net.primal.outerworld.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
+import net.minecraft.data.server.recipe.RecipeProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
@@ -25,10 +27,9 @@ public class OuterWorldRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
-
-
-
-//Autumn Maple Wood Set
+        /*
+        *Crafting Table Recipes
+        */
 
         //Woods
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.AUTUMN_MAPLE_WOOD, 3)
@@ -87,8 +88,8 @@ public class OuterWorldRecipeProvider extends FabricRecipeProvider {
 
 
         //Wooden Buttons
-        offerSingleOutputShapelessRecipe(exporter, OuterWorldBlocks.AUTUMN_MAPLE_BUTTON, OuterWorldBlocks.AUTUMN_MAPLE_PLANKS, null);
-        offerSingleOutputShapelessRecipe(exporter, OuterWorldBlocks.PRIMUBERANT_BUTTON, OuterWorldBlocks.PRIMUBERANT_PLANKS, null);
+        offerSingleOutputShapelessRecipe(exporter, OuterWorldBlocks.AUTUMN_MAPLE_BUTTON, OuterWorldBlocks.AUTUMN_MAPLE_PLANKS, "outer_world_blocks");
+        offerSingleOutputShapelessRecipe(exporter, OuterWorldBlocks.PRIMUBERANT_BUTTON, OuterWorldBlocks.PRIMUBERANT_PLANKS, "outer_world_blocks");
 
 
         //Wooden Pressure Plates
@@ -163,8 +164,71 @@ public class OuterWorldRecipeProvider extends FabricRecipeProvider {
         offerChestBoatRecipe(exporter, OuterWorldItems.PRIMUBERANT_CHEST_BOAT, OuterWorldItems.PRIMUBERANT_BOAT);
 
 
-//Ruby Tools and Armor
 
+        //Stone Recipes
+        //Deep Violet Stone
+        createStairsRecipe(OuterWorldBlocks.VIOLET_STONE_STAIRS.asItem(), Ingredient.ofItems(OuterWorldBlocks.VIOLET_STONE.asItem()))
+                .criterion(hasItem(OuterWorldBlocks.VIOLET_STONE.asItem()),
+                        conditionsFromItem(OuterWorldBlocks.VIOLET_STONE.asItem()))
+                .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.VIOLET_STONE_STAIRS.asItem())));
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.VIOLET_STONE_SLAB, OuterWorldBlocks.VIOLET_STONE);
+        offerSingleOutputShapelessRecipe(exporter, OuterWorldBlocks.VIOLET_STONE_BUTTON, OuterWorldBlocks.VIOLET_STONE, "outer_world_blocks");
+        offerPressurePlateRecipe(exporter, OuterWorldBlocks.VIOLET_STONE_PRESSURE_PLATE, OuterWorldBlocks.VIOLET_STONE);
+
+        createStairsRecipe(OuterWorldBlocks.COBBLED_VIOLET_STONE_STAIRS.asItem(), Ingredient.ofItems(OuterWorldBlocks.COBBLED_VIOLET_STONE.asItem()))
+                .criterion(hasItem(OuterWorldBlocks.COBBLED_VIOLET_STONE.asItem()),
+                        conditionsFromItem(OuterWorldBlocks.COBBLED_VIOLET_STONE.asItem()))
+                .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.COBBLED_VIOLET_STONE_STAIRS.asItem())));
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.COBBLED_VIOLET_STONE_SLAB, OuterWorldBlocks.COBBLED_VIOLET_STONE);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.COBBLED_VIOLET_STONE_WALL, OuterWorldBlocks.COBBLED_VIOLET_STONE);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.VIOLET_STONE_BRICKS, 4)
+                .pattern("MM ")
+                .pattern("MM ")
+                .pattern("   ")
+                .input('M', OuterWorldBlocks.VIOLET_STONE.asItem())
+                .criterion(hasItem(OuterWorldBlocks.VIOLET_STONE.asItem()),
+                        conditionsFromItem(OuterWorldBlocks.VIOLET_STONE.asItem()))
+                .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.VIOLET_STONE_BRICKS.asItem())));
+        createStairsRecipe(OuterWorldBlocks.VIOLET_STONE_BRICK_STAIRS.asItem(), Ingredient.ofItems(OuterWorldBlocks.VIOLET_STONE_BRICKS.asItem()))
+                .criterion(hasItem(OuterWorldBlocks.VIOLET_STONE_BRICKS.asItem()),
+                        conditionsFromItem(OuterWorldBlocks.VIOLET_STONE_BRICKS.asItem()))
+                .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.VIOLET_STONE_BRICK_STAIRS.asItem())));
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.VIOLET_STONE_BRICK_SLAB, OuterWorldBlocks.VIOLET_STONE_BRICKS);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.VIOLET_STONE_BRICK_WALL, OuterWorldBlocks.VIOLET_STONE_BRICKS);
+
+        //Deep Violet Stone
+        createStairsRecipe(OuterWorldBlocks.DEEP_VIOLET_STONE_STAIRS.asItem(), Ingredient.ofItems(OuterWorldBlocks.DEEP_VIOLET_STONE.asItem()))
+                .criterion(hasItem(OuterWorldBlocks.DEEP_VIOLET_STONE.asItem()),
+                        conditionsFromItem(OuterWorldBlocks.DEEP_VIOLET_STONE.asItem()))
+                .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.DEEP_VIOLET_STONE_STAIRS.asItem())));
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.DEEP_VIOLET_STONE_SLAB, OuterWorldBlocks.DEEP_VIOLET_STONE);
+        offerSingleOutputShapelessRecipe(exporter, OuterWorldBlocks.DEEP_VIOLET_STONE_BUTTON, OuterWorldBlocks.DEEP_VIOLET_STONE, "outer_world_blocks");
+        offerPressurePlateRecipe(exporter, OuterWorldBlocks.DEEP_VIOLET_STONE_PRESSURE_PLATE, OuterWorldBlocks.DEEP_VIOLET_STONE);
+
+        createStairsRecipe(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE_STAIRS.asItem(), Ingredient.ofItems(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE.asItem()))
+                .criterion(hasItem(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE.asItem()),
+                        conditionsFromItem(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE.asItem()))
+                .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE_STAIRS.asItem())));
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE_SLAB, OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE_WALL, OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.DEEP_VIOLET_STONE_BRICKS, 4)
+                .pattern("MM ")
+                .pattern("MM ")
+                .pattern("   ")
+                .input('M', OuterWorldBlocks.DEEP_VIOLET_STONE.asItem())
+                .criterion(hasItem(OuterWorldBlocks.DEEP_VIOLET_STONE.asItem()),
+                        conditionsFromItem(OuterWorldBlocks.DEEP_VIOLET_STONE.asItem()))
+                .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICKS.asItem())));
+        createStairsRecipe(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_STAIRS.asItem(), Ingredient.ofItems(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICKS.asItem()))
+                .criterion(hasItem(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICKS.asItem()),
+                        conditionsFromItem(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICKS.asItem()))
+                .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_STAIRS.asItem())));
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_SLAB, OuterWorldBlocks.DEEP_VIOLET_STONE_BRICKS);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_WALL, OuterWorldBlocks.DEEP_VIOLET_STONE_BRICKS);
+
+        //Ruby Tools and Armor
         //Ruby + Ruby Block
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldItems.RUBY,
                 RecipeCategory.DECORATIONS, OuterWorldBlocks.RUBY_BLOCK);
@@ -273,5 +337,58 @@ public class OuterWorldRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.STICK),
                         conditionsFromItem(Items.STICK))
                 .offerTo(exporter, new Identifier(getRecipeName(OuterWorldItems.RUBY_HOE)));
+
+
+        /*
+         *Smelting/Blasting Recipes
+         */
+
+        //Violet Stone
+        offerSmelting(exporter, List.of(OuterWorldBlocks.COBBLED_VIOLET_STONE), RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.VIOLET_STONE, 0.7f, 200, "outer_world_blocks");
+        offerSmelting(exporter, List.of(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE), RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.DEEP_VIOLET_STONE, 0.7f, 200, "outer_world_blocks");
+
+        offerSmelting(exporter, List.of(OuterWorldBlocks.VIOLET_STONE_RUBY_ORE), RecipeCategory.MISC, OuterWorldItems.RUBY, 0.7f, 200, "outer_world_blocks");
+        offerSmelting(exporter, List.of(OuterWorldBlocks.DEEP_VIOLET_STONE_RUBY_ORE), RecipeCategory.MISC, OuterWorldItems.RUBY, 0.7f, 200, "outer_world_blocks");
+
+        //offerBlasting(exporter, List.of(OuterWorldBlocks.COBBLED_VIOLET_STONE), RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.VIOLET_STONE, 0.7f, 100, "outer_world_blocks");
+
+
+
+        /*
+         *Stone Cutter Recipes
+         */
+
+        //Violet Stone Blocks
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.VIOLET_STONE_BRICK_STAIRS, OuterWorldBlocks.VIOLET_STONE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.VIOLET_STONE_BRICK_SLAB, OuterWorldBlocks.VIOLET_STONE_BRICKS, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.VIOLET_STONE_BRICK_WALL, OuterWorldBlocks.VIOLET_STONE_BRICKS);
+
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.VIOLET_STONE_STAIRS, OuterWorldBlocks.VIOLET_STONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.VIOLET_STONE_SLAB, OuterWorldBlocks.VIOLET_STONE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.VIOLET_STONE_BRICK_WALL, OuterWorldBlocks.VIOLET_STONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.VIOLET_STONE_BRICK_STAIRS, OuterWorldBlocks.VIOLET_STONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.VIOLET_STONE_BRICK_SLAB, OuterWorldBlocks.VIOLET_STONE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.VIOLET_STONE_BRICKS, OuterWorldBlocks.VIOLET_STONE);
+
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.COBBLED_VIOLET_STONE_STAIRS, OuterWorldBlocks.COBBLED_VIOLET_STONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.COBBLED_VIOLET_STONE_SLAB, OuterWorldBlocks.COBBLED_VIOLET_STONE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.COBBLED_VIOLET_STONE_WALL, OuterWorldBlocks.COBBLED_VIOLET_STONE);
+
+        //Deep Violet Stone Blocks
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_STAIRS, OuterWorldBlocks.DEEP_VIOLET_STONE_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_SLAB, OuterWorldBlocks.DEEP_VIOLET_STONE_BRICKS, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_WALL, OuterWorldBlocks.DEEP_VIOLET_STONE_BRICKS);
+
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.DEEP_VIOLET_STONE_STAIRS, OuterWorldBlocks.DEEP_VIOLET_STONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.DEEP_VIOLET_STONE_SLAB, OuterWorldBlocks.DEEP_VIOLET_STONE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_WALL, OuterWorldBlocks.DEEP_VIOLET_STONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_STAIRS, OuterWorldBlocks.DEEP_VIOLET_STONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_SLAB, OuterWorldBlocks.DEEP_VIOLET_STONE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.DEEP_VIOLET_STONE_BRICKS, OuterWorldBlocks.DEEP_VIOLET_STONE);
+
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE_STAIRS, OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE_SLAB, OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE_WALL, OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE);
+
     }
 }

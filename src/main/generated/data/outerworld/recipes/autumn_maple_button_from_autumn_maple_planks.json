@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
+  "group": "outer_world_blocks",
   "ingredients": [
     {
       "item": "outerworld:autumn_maple_planks"

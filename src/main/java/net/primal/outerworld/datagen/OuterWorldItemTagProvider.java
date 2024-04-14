@@ -21,6 +21,18 @@ public class OuterWorldItemTagProvider extends FabricTagProvider.ItemTagProvider
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
                 .add(OuterWorldItems.RUBY_HELMET, OuterWorldItems.RUBY_CHESTPLATE, OuterWorldItems.RUBY_LEGGINGS, OuterWorldItems.RUBY_BOOTS);
 
+        getOrCreateTagBuilder(ItemTags.STONE_CRAFTING_MATERIALS)
+                .add(OuterWorldBlocks.COBBLED_VIOLET_STONE.asItem())
+                .add(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE.asItem());
+
+        getOrCreateTagBuilder(ItemTags.STONE_TOOL_MATERIALS)
+                .add(OuterWorldBlocks.COBBLED_VIOLET_STONE.asItem())
+                .add(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE.asItem());
+
+        getOrCreateTagBuilder(ItemTags.STONE_BUTTONS)
+                .add(OuterWorldBlocks.VIOLET_STONE_BUTTON.asItem())
+                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_BUTTON.asItem());
+
         getOrCreateTagBuilder(ItemTags.PLANKS)
                 .add(OuterWorldBlocks.AUTUMN_MAPLE_PLANKS.asItem())
                 .add(OuterWorldBlocks.PRIMUBERANT_PLANKS.asItem());
@@ -29,9 +41,25 @@ public class OuterWorldItemTagProvider extends FabricTagProvider.ItemTagProvider
                 .add(OuterWorldBlocks.AUTUMN_MAPLE_SLAB.asItem())
                 .add(OuterWorldBlocks.PRIMUBERANT_SLAB.asItem());
 
+        getOrCreateTagBuilder(ItemTags.SLABS)
+                .add(OuterWorldBlocks.VIOLET_STONE_SLAB.asItem())
+                .add(OuterWorldBlocks.COBBLED_VIOLET_STONE_SLAB.asItem())
+                .add(OuterWorldBlocks.VIOLET_STONE_BRICK_SLAB.asItem())
+                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_SLAB.asItem())
+                .add(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE_SLAB.asItem())
+                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_SLAB.asItem());
+
         getOrCreateTagBuilder(ItemTags.WOODEN_STAIRS)
                 .add(OuterWorldBlocks.AUTUMN_MAPLE_STAIRS.asItem())
                 .add(OuterWorldBlocks.PRIMUBERANT_STAIRS.asItem());
+
+        getOrCreateTagBuilder(ItemTags.STAIRS)
+                .add(OuterWorldBlocks.VIOLET_STONE_STAIRS.asItem())
+                .add(OuterWorldBlocks.COBBLED_VIOLET_STONE_STAIRS.asItem())
+                .add(OuterWorldBlocks.VIOLET_STONE_BRICK_STAIRS.asItem())
+                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_STAIRS.asItem())
+                .add(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE_STAIRS.asItem())
+                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_STAIRS.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_FENCES)
                 .add(OuterWorldBlocks.AUTUMN_MAPLE_FENCE.asItem())
@@ -40,6 +68,12 @@ public class OuterWorldItemTagProvider extends FabricTagProvider.ItemTagProvider
         getOrCreateTagBuilder(ItemTags.FENCE_GATES)
                 .add(OuterWorldBlocks.AUTUMN_MAPLE_FENCE_GATE.asItem())
                 .add(OuterWorldBlocks.PRIMUBERANT_FENCE_GATE.asItem());
+
+        getOrCreateTagBuilder(ItemTags.WALLS)
+                .add(OuterWorldBlocks.COBBLED_VIOLET_STONE_WALL.asItem())
+                .add(OuterWorldBlocks.VIOLET_STONE_BRICK_WALL.asItem())
+                .add(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE_WALL.asItem())
+                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_WALL.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_BUTTONS)
                 .add(OuterWorldBlocks.AUTUMN_MAPLE_BUTTON.asItem())
@@ -96,10 +130,37 @@ public class OuterWorldItemTagProvider extends FabricTagProvider.ItemTagProvider
                 .add(OuterWorldBlocks.PRIMUBERANT_WOOD.asItem())
                 .add(OuterWorldBlocks.STRIPPED_PRIMUBERANT_LOG.asItem())
                 .add(OuterWorldBlocks.STRIPPED_PRIMUBERANT_WOOD.asItem());
-        //Create Custom Item Tag for each wood type TODO;
 
         getOrCreateTagBuilder(ItemTags.LEAVES)
                 .add(OuterWorldBlocks.AUTUMN_MAPLE_LEAVES.asItem());
+
+        getOrCreateTagBuilder(ItemTags.SWORDS)
+                .add(OuterWorldItems.RUBY_SWORD);
+
+        getOrCreateTagBuilder(ItemTags.PICKAXES)
+                .add(OuterWorldItems.RUBY_PICKAXE);
+
+        getOrCreateTagBuilder(ItemTags.AXES)
+                .add(OuterWorldItems.RUBY_AXE);
+
+        getOrCreateTagBuilder(ItemTags.SHOVELS)
+                .add(OuterWorldItems.RUBY_SHOVEL);
+
+        getOrCreateTagBuilder(ItemTags.HOES)
+                .add(OuterWorldItems.RUBY_HOE);
+
+        getOrCreateTagBuilder(ItemTags.SAPLINGS)
+                .add(OuterWorldBlocks.AUTUMN_MAPLE_SAPLING.asItem());
+
+        getOrCreateTagBuilder(ItemTags.COMPLETES_FIND_TREE_TUTORIAL)
+                .add(OuterWorldBlocks.AUTUMN_MAPLE_LOG.asItem())
+                .add(OuterWorldBlocks.AUTUMN_MAPLE_WOOD.asItem())
+                .add(OuterWorldBlocks.STRIPPED_AUTUMN_MAPLE_LOG.asItem())
+                .add(OuterWorldBlocks.STRIPPED_AUTUMN_MAPLE_WOOD.asItem())
+                .add(OuterWorldBlocks.PRIMUBERANT_LOG.asItem())
+                .add(OuterWorldBlocks.PRIMUBERANT_WOOD.asItem())
+                .add(OuterWorldBlocks.STRIPPED_PRIMUBERANT_LOG.asItem())
+                .add(OuterWorldBlocks.STRIPPED_PRIMUBERANT_WOOD.asItem());
 
 
     }

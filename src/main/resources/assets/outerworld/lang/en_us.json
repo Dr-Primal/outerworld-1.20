@@ -28,6 +28,41 @@
 
 
 
+  "block.outerworld.violet_stone": "Violet Stone",
+  "block.outerworld.violet_stone_stairs": "Violet Stone Stairs",
+  "block.outerworld.violet_stone_slab": "Violet Stone Slab",
+  "block.outerworld.violet_stone_button": "Violet Stone Button",
+  "block.outerworld.violet_stone_pressure_plate": "Violet Stone Pressure Plate",
+  "block.outerworld.cobbled_violet_stone": "Cobbled Violet Stone",
+  "block.outerworld.cobbled_violet_stone_stairs": "Cobbled Violet Stone Stairs",
+  "block.outerworld.cobbled_violet_stone_slab": "Cobbled Violet Stone Slab",
+  "block.outerworld.cobbled_violet_stone_wall": "Cobbled Violet Stone Wall",
+  "block.outerworld.violet_stone_bricks": "Violet Stone Bricks",
+  "block.outerworld.violet_stone_brick_stairs": "Violet Stone Brick Stairs",
+  "block.outerworld.violet_stone_brick_slab": "Violet Stone Brick Slab",
+  "block.outerworld.violet_stone_brick_wall": "Violet Stone Brick Wall",
+
+  "block.outerworld.deep_violet_stone": "Deep Violet Stone",
+  "block.outerworld.deep_violet_stone_stairs": "Deep Violet Stone Stairs",
+  "block.outerworld.deep_violet_stone_slab": "Deep Violet Stone Slab",
+  "block.outerworld.deep_violet_stone_button": "Deep Violet Stone Button",
+  "block.outerworld.deep_violet_stone_pressure_plate": "Deep Violet Stone Pressure Plate",
+  "block.outerworld.cobbled_deep_violet_stone": "Cobbled Deep Violet Stone",
+  "block.outerworld.cobbled_deep_violet_stone_stairs": "Cobbled Deep Violet Stone Stairs",
+  "block.outerworld.cobbled_deep_violet_stone_slab": "Cobbled Deep Violet Stone Slab",
+  "block.outerworld.cobbled_deep_violet_stone_wall": "Cobbled Deep Violet Stone Wall",
+  "block.outerworld.deep_violet_stone_bricks": "Deep Violet Stone Bricks",
+  "block.outerworld.deep_violet_stone_brick_stairs": "Deep Violet Stone Brick Stairs",
+  "block.outerworld.deep_violet_stone_brick_slab": "Deep Violet Stone Brick Slab",
+  "block.outerworld.deep_violet_stone_brick_wall": "Deep Violet Stone Brick Wall",
+
+
+
+  "block.outerworld.violet_stone_ruby_ore": "Violet Stone Ruby Ore",
+  "block.outerworld.deep_violet_stone_ruby_ore": "Deep Violet Stone Ruby Ore",
+
+
+
   "block.outerworld.primuberant_log": "Primuberant Log",
   "block.outerworld.primuberant_wood": "Primuberant Wood",
   "block.outerworld.stripped_primuberant_log": "Stripped Primuberant Log",

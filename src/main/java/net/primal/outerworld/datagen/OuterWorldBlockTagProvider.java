@@ -18,9 +18,40 @@ public class OuterWorldBlockTagProvider extends FabricTagProvider.BlockTagProvid
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
+
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(OuterWorldBlocks.PURPLE_ICE)
-                .add(OuterWorldBlocks.RUBY_BLOCK);
+                .add(OuterWorldBlocks.RUBY_BLOCK)
+                .add(OuterWorldBlocks.VIOLET_STONE)
+                .add(OuterWorldBlocks.VIOLET_STONE_STAIRS)
+                .add(OuterWorldBlocks.VIOLET_STONE_SLAB)
+                .add(OuterWorldBlocks.VIOLET_STONE_BUTTON)
+                .add(OuterWorldBlocks.VIOLET_STONE_PRESSURE_PLATE)
+                .add(OuterWorldBlocks.COBBLED_VIOLET_STONE)
+                .add(OuterWorldBlocks.COBBLED_VIOLET_STONE_STAIRS)
+                .add(OuterWorldBlocks.COBBLED_VIOLET_STONE_SLAB)
+                .add(OuterWorldBlocks.COBBLED_VIOLET_STONE_WALL)
+                .add(OuterWorldBlocks.VIOLET_STONE_BRICKS)
+                .add(OuterWorldBlocks.VIOLET_STONE_BRICK_STAIRS)
+                .add(OuterWorldBlocks.VIOLET_STONE_BRICK_SLAB)
+                .add(OuterWorldBlocks.VIOLET_STONE_BRICK_WALL)
+
+                .add(OuterWorldBlocks.DEEP_VIOLET_STONE)
+                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_STAIRS)
+                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_SLAB)
+                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_BUTTON)
+                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_PRESSURE_PLATE)
+                .add(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE)
+                .add(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE_STAIRS)
+                .add(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE_SLAB)
+                .add(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE_WALL)
+                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICKS)
+                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_STAIRS)
+                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_SLAB)
+                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_WALL)
+
+                .add(OuterWorldBlocks.VIOLET_STONE_RUBY_ORE)
+                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_RUBY_ORE);
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .add(OuterWorldBlocks.AUTUMN_MAPLE_LOG)
@@ -76,9 +107,25 @@ public class OuterWorldBlockTagProvider extends FabricTagProvider.BlockTagProvid
                 .add(OuterWorldBlocks.AUTUMN_MAPLE_STAIRS)
                 .add(OuterWorldBlocks.PRIMUBERANT_STAIRS);
 
+        getOrCreateTagBuilder(BlockTags.STAIRS)
+                .add(OuterWorldBlocks.VIOLET_STONE_STAIRS)
+                .add(OuterWorldBlocks.COBBLED_VIOLET_STONE_STAIRS)
+                .add(OuterWorldBlocks.VIOLET_STONE_BRICK_STAIRS)
+                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_STAIRS)
+                .add(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE_STAIRS)
+                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_STAIRS);
+
         getOrCreateTagBuilder(BlockTags.WOODEN_SLABS)
                 .add(OuterWorldBlocks.AUTUMN_MAPLE_SLAB)
                 .add(OuterWorldBlocks.PRIMUBERANT_SLAB);
+
+        getOrCreateTagBuilder(BlockTags.SLABS)
+                .add(OuterWorldBlocks.VIOLET_STONE_SLAB)
+                .add(OuterWorldBlocks.COBBLED_VIOLET_STONE_SLAB)
+                .add(OuterWorldBlocks.VIOLET_STONE_BRICK_SLAB)
+                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_SLAB)
+                .add(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE_SLAB)
+                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_SLAB);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(OuterWorldBlocks.AUTUMN_MAPLE_FENCE)
@@ -88,13 +135,27 @@ public class OuterWorldBlockTagProvider extends FabricTagProvider.BlockTagProvid
                 .add(OuterWorldBlocks.AUTUMN_MAPLE_FENCE_GATE)
                 .add(OuterWorldBlocks.PRIMUBERANT_FENCE_GATE);
 
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(OuterWorldBlocks.COBBLED_VIOLET_STONE_WALL)
+                .add(OuterWorldBlocks.VIOLET_STONE_BRICK_WALL)
+                .add(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE_WALL)
+                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_WALL);
+
         getOrCreateTagBuilder(BlockTags.WOODEN_BUTTONS)
                 .add(OuterWorldBlocks.AUTUMN_MAPLE_BUTTON)
                 .add(OuterWorldBlocks.PRIMUBERANT_BUTTON);
 
+        getOrCreateTagBuilder(BlockTags.BUTTONS)
+                .add(OuterWorldBlocks.VIOLET_STONE_BUTTON)
+                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_BUTTON);
+
         getOrCreateTagBuilder(BlockTags.WOODEN_PRESSURE_PLATES)
                 .add(OuterWorldBlocks.AUTUMN_MAPLE_PRESSURE_PLATE)
                 .add(OuterWorldBlocks.PRIMUBERANT_PRESSURE_PLATE);
+
+        getOrCreateTagBuilder(BlockTags.STONE_PRESSURE_PLATES)
+                .add(OuterWorldBlocks.VIOLET_STONE_PRESSURE_PLATE)
+                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_PRESSURE_PLATE);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_DOORS)
                 .add(OuterWorldBlocks.AUTUMN_MAPLE_DOOR)

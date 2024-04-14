@@ -20,6 +20,41 @@ public class OuterWorldItemGroups {
 
                     entries.add(OuterWorldBlocks.RUBY_BLOCK);
 
+                    entries.add(OuterWorldBlocks.VIOLET_STONE);
+                    entries.add(OuterWorldBlocks.VIOLET_STONE_STAIRS);
+                    entries.add(OuterWorldBlocks.VIOLET_STONE_SLAB);
+                    entries.add(OuterWorldBlocks.VIOLET_STONE_BUTTON);
+                    entries.add(OuterWorldBlocks.VIOLET_STONE_PRESSURE_PLATE);
+
+                    entries.add(OuterWorldBlocks.COBBLED_VIOLET_STONE);
+                    entries.add(OuterWorldBlocks.COBBLED_VIOLET_STONE_STAIRS);
+                    entries.add(OuterWorldBlocks.COBBLED_VIOLET_STONE_SLAB);
+                    entries.add(OuterWorldBlocks.COBBLED_VIOLET_STONE_WALL);
+
+                    entries.add(OuterWorldBlocks.VIOLET_STONE_BRICKS);
+                    entries.add(OuterWorldBlocks.VIOLET_STONE_BRICK_STAIRS);
+                    entries.add(OuterWorldBlocks.VIOLET_STONE_BRICK_SLAB);
+                    entries.add(OuterWorldBlocks.VIOLET_STONE_BRICK_WALL);
+
+                    entries.add(OuterWorldBlocks.DEEP_VIOLET_STONE);
+                    entries.add(OuterWorldBlocks.DEEP_VIOLET_STONE_STAIRS);
+                    entries.add(OuterWorldBlocks.DEEP_VIOLET_STONE_SLAB);
+                    entries.add(OuterWorldBlocks.DEEP_VIOLET_STONE_BUTTON);
+                    entries.add(OuterWorldBlocks.DEEP_VIOLET_STONE_PRESSURE_PLATE);
+
+                    entries.add(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE);
+                    entries.add(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE_STAIRS);
+                    entries.add(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE_SLAB);
+                    entries.add(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE_WALL);
+
+                    entries.add(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICKS);
+                    entries.add(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_STAIRS);
+                    entries.add(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_SLAB);
+                    entries.add(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_WALL);
+
+                    entries.add(OuterWorldBlocks.VIOLET_STONE_RUBY_ORE);
+                    entries.add(OuterWorldBlocks.DEEP_VIOLET_STONE_RUBY_ORE);
+
                     entries.add(OuterWorldBlocks.AUTUMN_MAPLE_LOG);
                     entries.add(OuterWorldBlocks.AUTUMN_MAPLE_WOOD);
                     entries.add(OuterWorldBlocks.STRIPPED_AUTUMN_MAPLE_LOG);

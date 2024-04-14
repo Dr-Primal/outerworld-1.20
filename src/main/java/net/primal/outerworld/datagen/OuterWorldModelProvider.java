@@ -16,6 +16,41 @@ public class OuterWorldModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+        BlockStateModelGenerator.BlockTexturePool violetStonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(OuterWorldBlocks.VIOLET_STONE);
+        BlockStateModelGenerator.BlockTexturePool cobbledVioletStonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(OuterWorldBlocks.COBBLED_VIOLET_STONE);
+        BlockStateModelGenerator.BlockTexturePool violetStoneBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(OuterWorldBlocks.VIOLET_STONE_BRICKS);
+
+        violetStonePool.stairs(OuterWorldBlocks.VIOLET_STONE_STAIRS);
+        violetStonePool.slab(OuterWorldBlocks.VIOLET_STONE_SLAB);
+        violetStonePool.button(OuterWorldBlocks.VIOLET_STONE_BUTTON);
+        violetStonePool.pressurePlate(OuterWorldBlocks.VIOLET_STONE_PRESSURE_PLATE);
+
+        cobbledVioletStonePool.stairs(OuterWorldBlocks.COBBLED_VIOLET_STONE_STAIRS);
+        cobbledVioletStonePool.slab(OuterWorldBlocks.COBBLED_VIOLET_STONE_SLAB);
+        cobbledVioletStonePool.wall(OuterWorldBlocks.COBBLED_VIOLET_STONE_WALL);
+
+        violetStoneBrickPool.stairs(OuterWorldBlocks.VIOLET_STONE_BRICK_STAIRS);
+        violetStoneBrickPool.slab(OuterWorldBlocks.VIOLET_STONE_BRICK_SLAB);
+        violetStoneBrickPool.wall(OuterWorldBlocks.VIOLET_STONE_BRICK_WALL);
+
+        BlockStateModelGenerator.BlockTexturePool deepVioletStonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(OuterWorldBlocks.DEEP_VIOLET_STONE);
+        BlockStateModelGenerator.BlockTexturePool cobbledDeepVioletStonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE);
+        BlockStateModelGenerator.BlockTexturePool deepVioletStoneBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICKS);
+
+        deepVioletStonePool.stairs(OuterWorldBlocks.DEEP_VIOLET_STONE_STAIRS);
+        deepVioletStonePool.slab(OuterWorldBlocks.DEEP_VIOLET_STONE_SLAB);
+        deepVioletStonePool.button(OuterWorldBlocks.DEEP_VIOLET_STONE_BUTTON);
+        deepVioletStonePool.pressurePlate(OuterWorldBlocks.DEEP_VIOLET_STONE_PRESSURE_PLATE);
+
+        cobbledDeepVioletStonePool.stairs(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE_STAIRS);
+        cobbledDeepVioletStonePool.slab(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE_SLAB);
+        cobbledDeepVioletStonePool.wall(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE_WALL);
+
+        deepVioletStoneBrickPool.stairs(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_STAIRS);
+        deepVioletStoneBrickPool.slab(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_SLAB);
+        deepVioletStoneBrickPool.wall(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_WALL);
+
+
         BlockStateModelGenerator.BlockTexturePool autumnMaplePool = blockStateModelGenerator.registerCubeAllModelTexturePool(OuterWorldBlocks.AUTUMN_MAPLE_PLANKS);
         autumnMaplePool.family(OuterWorldBlocks.AUTUMN_MAPLE_FAMILY);
 
@@ -24,6 +59,9 @@ public class OuterWorldModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(OuterWorldBlocks.PURPLE_ICE);
         blockStateModelGenerator.registerSimpleCubeAll(OuterWorldBlocks.RUBY_BLOCK);
+
+        blockStateModelGenerator.registerSimpleCubeAll(OuterWorldBlocks.VIOLET_STONE_RUBY_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(OuterWorldBlocks.DEEP_VIOLET_STONE_RUBY_ORE);
 
         blockStateModelGenerator.registerLog(OuterWorldBlocks.AUTUMN_MAPLE_LOG).log(OuterWorldBlocks.AUTUMN_MAPLE_LOG).wood(OuterWorldBlocks.AUTUMN_MAPLE_WOOD);
         blockStateModelGenerator.registerLog(OuterWorldBlocks.STRIPPED_AUTUMN_MAPLE_LOG).log(OuterWorldBlocks.STRIPPED_AUTUMN_MAPLE_LOG).wood(OuterWorldBlocks.STRIPPED_AUTUMN_MAPLE_WOOD);

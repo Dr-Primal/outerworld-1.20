@@ -27,6 +27,5 @@ public class AutumnMapleLeavesBlock extends LeavesBlock {
             return;
         }
         ParticleUtil.spawnParticle(world, pos, random, OuterWorldParticles.AUTUMN_MAPLE_LEAVES);
-        //Make Custom Particle For Maple Leaves TODO;
     }
 }
