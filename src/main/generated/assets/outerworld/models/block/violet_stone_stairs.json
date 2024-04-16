@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "outerworld:block/violet_stone",
+    "side": "outerworld:block/violet_stone",
+    "top": "outerworld:block/violet_stone"
+  }
+}

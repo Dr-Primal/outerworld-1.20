@@ -121,6 +121,35 @@ public class OuterWorldLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE_SLAB, slabDrops(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE_SLAB));
         addDrop(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_SLAB, slabDrops(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_SLAB));
 
+        addDrop(OuterWorldBlocks.SCORCH_STONE, (Block block) -> this.drops(block, OuterWorldBlocks.COBBLED_SCORCH_STONE));
+        addDrop(OuterWorldBlocks.SCORCH_STONE_STAIRS);
+        addDrop(OuterWorldBlocks.SCORCH_STONE_BUTTON);
+        addDrop(OuterWorldBlocks.SCORCH_STONE_PRESSURE_PLATE);
+        addDrop(OuterWorldBlocks.COBBLED_SCORCH_STONE);
+        addDrop(OuterWorldBlocks.COBBLED_SCORCH_STONE_STAIRS);
+        addDrop(OuterWorldBlocks.COBBLED_SCORCH_STONE_WALL);
+        addDrop(OuterWorldBlocks.SCORCH_STONE_BRICKS);
+        addDrop(OuterWorldBlocks.SCORCH_STONE_BRICK_STAIRS);
+        addDrop(OuterWorldBlocks.SCORCH_STONE_BRICK_WALL);
+
+        addDrop(OuterWorldBlocks.SCORCH_STONE_SLAB, slabDrops(OuterWorldBlocks.SCORCH_STONE_SLAB));
+        addDrop(OuterWorldBlocks.COBBLED_SCORCH_STONE_SLAB, slabDrops(OuterWorldBlocks.COBBLED_SCORCH_STONE_SLAB));
+        addDrop(OuterWorldBlocks.SCORCH_STONE_BRICK_SLAB, slabDrops(OuterWorldBlocks.SCORCH_STONE_BRICK_SLAB));
+
+        addDrop(OuterWorldBlocks.DEEP_SCORCH_STONE, (Block block) -> this.drops(block, OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE));
+        addDrop(OuterWorldBlocks.DEEP_SCORCH_STONE_STAIRS);
+        addDrop(OuterWorldBlocks.DEEP_SCORCH_STONE_BUTTON);
+        addDrop(OuterWorldBlocks.DEEP_SCORCH_STONE_PRESSURE_PLATE);
+        addDrop(OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE);
+        addDrop(OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE_STAIRS);
+        addDrop(OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE_WALL);
+        addDrop(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICKS);
+        addDrop(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICK_STAIRS);
+        addDrop(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICK_WALL);
+
+        addDrop(OuterWorldBlocks.DEEP_SCORCH_STONE_SLAB, slabDrops(OuterWorldBlocks.DEEP_SCORCH_STONE_SLAB));
+        addDrop(OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE_SLAB, slabDrops(OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE_SLAB));
+        addDrop(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICK_SLAB, slabDrops(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICK_SLAB));
 
         addDrop(OuterWorldBlocks.AUTUMN_MAPLE_LEAVES,
                 autumnMapleLeavesDrops(0.05f, 0.0625f, 0.083333336f, 0.1f));

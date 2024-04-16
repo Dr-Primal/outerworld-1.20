@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "outerworld:block/deep_violet_stone_brick_slab"
+    },
+    "type=double": {
+      "model": "outerworld:block/deep_violet_stone_bricks"
+    },
+    "type=top": {
+      "model": "outerworld:block/deep_violet_stone_brick_slab_top"
+    }
+  }
+}

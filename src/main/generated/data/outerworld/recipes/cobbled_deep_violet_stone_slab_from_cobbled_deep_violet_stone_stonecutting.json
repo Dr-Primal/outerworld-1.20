@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "outerworld:cobbled_deep_violet_stone"
+  },
+  "result": "outerworld:cobbled_deep_violet_stone_slab"
+}

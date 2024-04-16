@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "outerworld:block/violet_stone_bricks",
+    "side": "outerworld:block/violet_stone_bricks",
+    "top": "outerworld:block/violet_stone_bricks"
+  }
+}

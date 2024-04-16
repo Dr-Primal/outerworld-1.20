@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "outerworld:cobbled_violet_stone",
+    "outerworld:cobbled_deep_violet_stone",
+    "outerworld:cobbled_scorch_stone",
+    "outerworld:cobbled_deep_scorch_stone"
+  ]
+}

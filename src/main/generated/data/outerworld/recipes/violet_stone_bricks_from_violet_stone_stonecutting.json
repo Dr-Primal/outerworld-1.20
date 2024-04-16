@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "outerworld:violet_stone"
+  },
+  "result": "outerworld:violet_stone_bricks"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "M": {
+      "item": "outerworld:scorch_stone"
+    }
+  },
+  "pattern": [
+    "MM ",
+    "MM ",
+    "   "
+  ],
+  "result": {
+    "count": 4,
+    "item": "outerworld:scorch_stone_bricks"
+  },
+  "show_notification": true
+}

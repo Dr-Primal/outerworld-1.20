@@ -52,8 +52,45 @@ public class OuterWorldItemGroups {
                     entries.add(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_SLAB);
                     entries.add(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_WALL);
 
+
+                    entries.add(OuterWorldBlocks.SCORCH_STONE);
+                    entries.add(OuterWorldBlocks.SCORCH_STONE_STAIRS);
+                    entries.add(OuterWorldBlocks.SCORCH_STONE_SLAB);
+                    entries.add(OuterWorldBlocks.SCORCH_STONE_BUTTON);
+                    entries.add(OuterWorldBlocks.SCORCH_STONE_PRESSURE_PLATE);
+
+                    entries.add(OuterWorldBlocks.COBBLED_SCORCH_STONE);
+                    entries.add(OuterWorldBlocks.COBBLED_SCORCH_STONE_STAIRS);
+                    entries.add(OuterWorldBlocks.COBBLED_SCORCH_STONE_SLAB);
+                    entries.add(OuterWorldBlocks.COBBLED_SCORCH_STONE_WALL);
+
+                    entries.add(OuterWorldBlocks.SCORCH_STONE_BRICKS);
+                    entries.add(OuterWorldBlocks.SCORCH_STONE_BRICK_STAIRS);
+                    entries.add(OuterWorldBlocks.SCORCH_STONE_BRICK_SLAB);
+                    entries.add(OuterWorldBlocks.SCORCH_STONE_BRICK_WALL);
+
+                    entries.add(OuterWorldBlocks.DEEP_SCORCH_STONE);
+                    entries.add(OuterWorldBlocks.DEEP_SCORCH_STONE_STAIRS);
+                    entries.add(OuterWorldBlocks.DEEP_SCORCH_STONE_SLAB);
+                    entries.add(OuterWorldBlocks.DEEP_SCORCH_STONE_BUTTON);
+                    entries.add(OuterWorldBlocks.DEEP_SCORCH_STONE_PRESSURE_PLATE);
+
+                    entries.add(OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE);
+                    entries.add(OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE_STAIRS);
+                    entries.add(OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE_SLAB);
+                    entries.add(OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE_WALL);
+
+                    entries.add(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICKS);
+                    entries.add(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICK_STAIRS);
+                    entries.add(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICK_SLAB);
+                    entries.add(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICK_WALL);
+
+
+
                     entries.add(OuterWorldBlocks.VIOLET_STONE_RUBY_ORE);
                     entries.add(OuterWorldBlocks.DEEP_VIOLET_STONE_RUBY_ORE);
+
+
 
                     entries.add(OuterWorldBlocks.AUTUMN_MAPLE_LOG);
                     entries.add(OuterWorldBlocks.AUTUMN_MAPLE_WOOD);

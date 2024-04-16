@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "outerworld:violet_stone_pressure_plate",
+    "outerworld:deep_violet_stone_pressure_plate",
+    "outerworld:scorch_stone_pressure_plate",
+    "outerworld:deep_scorch_stone_pressure_plate"
+  ]
+}

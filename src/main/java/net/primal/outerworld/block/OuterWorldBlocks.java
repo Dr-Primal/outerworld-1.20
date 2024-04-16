@@ -53,7 +53,9 @@ public class OuterWorldBlocks {
                     .requiresTool()
                     .strength(4.5f, 3.0f), UniformIntProvider.create(2, 5)));
 
-    //Violet-stone and Variants
+
+
+    //Violet Stone
     public static final Block VIOLET_STONE = registerBlock("violet_stone",
             new Block(FabricBlockSettings.copy(Blocks.STONE)
                     .mapColor(MapColor.PURPLE)
@@ -63,7 +65,7 @@ public class OuterWorldBlocks {
 
     public static final Block VIOLET_STONE_STAIRS = registerBlock("violet_stone_stairs",
             new StairsBlock(VIOLET_STONE.getDefaultState(), FabricBlockSettings.copyOf(VIOLET_STONE)
-                    .mapColor(MapColor.TERRACOTTA_PURPLE)
+                    .mapColor(MapColor.PURPLE)
                     .requiresTool()
                     .strength(2.0f, 6.0f)
                     .sounds(BlockSoundGroup.STONE)));
@@ -96,7 +98,7 @@ public class OuterWorldBlocks {
 
     public static final Block COBBLED_VIOLET_STONE_STAIRS = registerBlock("cobbled_violet_stone_stairs",
             new StairsBlock(COBBLED_VIOLET_STONE.getDefaultState(), FabricBlockSettings.copyOf(COBBLED_VIOLET_STONE)
-                    .mapColor(MapColor.TERRACOTTA_PURPLE)
+                    .mapColor(MapColor.PURPLE)
                     .requiresTool()
                     .strength(2.0f, 6.0f)
                     .sounds(BlockSoundGroup.STONE)));
@@ -108,7 +110,7 @@ public class OuterWorldBlocks {
 
     public static final Block COBBLED_VIOLET_STONE_WALL = registerBlock("cobbled_violet_stone_wall",
             new WallBlock(FabricBlockSettings.copyOf(OuterWorldBlocks.COBBLED_VIOLET_STONE).solid()
-                    .mapColor(MapColor.TERRACOTTA_PURPLE)
+                    .mapColor(MapColor.PURPLE)
                     .requiresTool()
                     .strength(2.0f, 6.0f)
                     .sounds(BlockSoundGroup.STONE)));
@@ -122,7 +124,7 @@ public class OuterWorldBlocks {
 
     public static final Block VIOLET_STONE_BRICK_STAIRS = registerBlock("violet_stone_brick_stairs",
             new StairsBlock(VIOLET_STONE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(VIOLET_STONE_BRICKS)
-                    .mapColor(MapColor.TERRACOTTA_PURPLE)
+                    .mapColor(MapColor.PURPLE)
                     .requiresTool()
                     .strength(2.0f, 6.0f)
                     .sounds(BlockSoundGroup.STONE)));
@@ -134,7 +136,7 @@ public class OuterWorldBlocks {
 
     public static final Block VIOLET_STONE_BRICK_WALL = registerBlock("violet_stone_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(OuterWorldBlocks.VIOLET_STONE_BRICKS)
-                    .mapColor(MapColor.TERRACOTTA_PURPLE)
+                    .mapColor(MapColor.PURPLE)
                     .requiresTool()
                     .strength(2.0f, 6.0f)
                     .sounds(BlockSoundGroup.STONE)
@@ -223,6 +225,184 @@ public class OuterWorldBlocks {
     public static final Block DEEP_VIOLET_STONE_BRICK_WALL = registerBlock("deep_violet_stone_brick_wall",
             new WallBlock(FabricBlockSettings.copyOf(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICKS)
                     .mapColor(MapColor.TERRACOTTA_PURPLE)
+                    .requiresTool()
+                    .strength(3.5f, 6.0f)
+                    .sounds(BlockSoundGroup.STONE)
+                    .solid()));
+
+
+
+//Scorch Stone
+    public static final Block SCORCH_STONE = registerBlock("scorch_stone",
+            new Block(FabricBlockSettings.copy(Blocks.STONE)
+                    .mapColor(MapColor.ORANGE)
+                    .requiresTool()
+                    .strength(2.0f, 6.0f)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block SCORCH_STONE_STAIRS = registerBlock("scorch_stone_stairs",
+            new StairsBlock(SCORCH_STONE.getDefaultState(), FabricBlockSettings.copyOf(SCORCH_STONE)
+                    .mapColor(MapColor.ORANGE)
+                    .requiresTool()
+                    .strength(2.0f, 6.0f)
+                    .sounds(BlockSoundGroup.STONE)));
+    public static final Block SCORCH_STONE_SLAB = registerBlock("scorch_stone_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_SLAB)
+                    .mapColor(MapColor.ORANGE)
+                    .requiresTool()
+                    .strength(2.0f, 6.0f)));
+
+    public static final Block SCORCH_STONE_BUTTON = registerBlock("scorch_stone_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON)
+                    .mapColor(MapColor.ORANGE)
+                    .strength(0.5f)
+                    .collidable(false),
+                    BlockSetType.STONE, 20, false));
+    public static final Block SCORCH_STONE_PRESSURE_PLATE = registerBlock("scorch_stone_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS,
+                    FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)
+                            .mapColor(MapColor.ORANGE)
+                            .requiresTool()
+                            .strength(0.5f),
+                    BlockSetType.STONE));
+
+    public static final Block COBBLED_SCORCH_STONE = registerBlock("cobbled_scorch_stone",
+            new Block(FabricBlockSettings.copy(Blocks.COBBLESTONE)
+                    .mapColor(MapColor.ORANGE)
+                    .requiresTool()
+                    .strength(2.0f, 6.0f)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block COBBLED_SCORCH_STONE_STAIRS = registerBlock("cobbled_scorch_stone_stairs",
+            new StairsBlock(COBBLED_SCORCH_STONE.getDefaultState(), FabricBlockSettings.copyOf(COBBLED_SCORCH_STONE)
+                    .mapColor(MapColor.ORANGE)
+                    .requiresTool()
+                    .strength(2.0f, 6.0f)
+                    .sounds(BlockSoundGroup.STONE)));
+    public static final Block COBBLED_SCORCH_STONE_SLAB = registerBlock("cobbled_scorch_stone_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_SLAB)
+                    .mapColor(MapColor.ORANGE)
+                    .requiresTool()
+                    .strength(2.0f, 6.0f)));
+
+    public static final Block COBBLED_SCORCH_STONE_WALL = registerBlock("cobbled_scorch_stone_wall",
+            new WallBlock(FabricBlockSettings.copyOf(OuterWorldBlocks.COBBLED_SCORCH_STONE).solid()
+                    .mapColor(MapColor.ORANGE)
+                    .requiresTool()
+                    .strength(2.0f, 6.0f)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block SCORCH_STONE_BRICKS = registerBlock("scorch_stone_bricks",
+            new Block(FabricBlockSettings.copy(Blocks.STONE_BRICKS)
+                    .mapColor(MapColor.ORANGE)
+                    .requiresTool()
+                    .strength(2.0f, 6.0f)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block SCORCH_STONE_BRICK_STAIRS = registerBlock("scorch_stone_brick_stairs",
+            new StairsBlock(SCORCH_STONE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(SCORCH_STONE_BRICKS)
+                    .mapColor(MapColor.ORANGE)
+                    .requiresTool()
+                    .strength(2.0f, 6.0f)
+                    .sounds(BlockSoundGroup.STONE)));
+    public static final Block SCORCH_STONE_BRICK_SLAB = registerBlock("scorch_stone_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_SLAB)
+                    .mapColor(MapColor.ORANGE)
+                    .requiresTool()
+                    .strength(2.0f, 6.0f)));
+
+    public static final Block SCORCH_STONE_BRICK_WALL = registerBlock("scorch_stone_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(OuterWorldBlocks.SCORCH_STONE_BRICKS)
+                    .mapColor(MapColor.ORANGE)
+                    .requiresTool()
+                    .strength(2.0f, 6.0f)
+                    .sounds(BlockSoundGroup.STONE)
+                    .solid()));
+//Create Chiseled Scorch Stone Brick TODO
+
+    //Deep Scorch Stone
+    public static final Block DEEP_SCORCH_STONE = registerBlock("deep_scorch_stone",
+            new Block(FabricBlockSettings.copy(Blocks.STONE)
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+                    .requiresTool()
+                    .strength(3.5f, 6.0f)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block DEEP_SCORCH_STONE_STAIRS = registerBlock("deep_scorch_stone_stairs",
+            new StairsBlock(SCORCH_STONE.getDefaultState(), FabricBlockSettings.copyOf(SCORCH_STONE)
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+                    .requiresTool()
+                    .strength(3.5f, 6.0f)
+                    .sounds(BlockSoundGroup.STONE)));
+    public static final Block DEEP_SCORCH_STONE_SLAB = registerBlock("deep_scorch_stone_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_SLAB)
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+                    .requiresTool()
+                    .strength(3.5f, 6.0f)));
+
+    public static final Block DEEP_SCORCH_STONE_BUTTON = registerBlock("deep_scorch_stone_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON)
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+                    .strength(0.5f)
+                    .collidable(false),
+                    BlockSetType.STONE, 20, false));
+    public static final Block DEEP_SCORCH_STONE_PRESSURE_PLATE = registerBlock("deep_scorch_stone_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.MOBS,
+                    FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE)
+                            .mapColor(MapColor.TERRACOTTA_ORANGE)
+                            .requiresTool()
+                            .strength(0.5f),
+                    BlockSetType.STONE));
+
+    public static final Block COBBLED_DEEP_SCORCH_STONE = registerBlock("cobbled_deep_scorch_stone",
+            new Block(FabricBlockSettings.copy(Blocks.COBBLESTONE)
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+                    .requiresTool()
+                    .strength(3.5f, 6.0f)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block COBBLED_DEEP_SCORCH_STONE_STAIRS = registerBlock("cobbled_deep_scorch_stone_stairs",
+            new StairsBlock(COBBLED_SCORCH_STONE.getDefaultState(), FabricBlockSettings.copyOf(COBBLED_SCORCH_STONE)
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+                    .requiresTool()
+                    .strength(3.5f, 6.0f)
+                    .sounds(BlockSoundGroup.STONE)));
+    public static final Block COBBLED_DEEP_SCORCH_STONE_SLAB = registerBlock("cobbled_deep_scorch_stone_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_SLAB)
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+                    .requiresTool()
+                    .strength(3.5f, 6.0f)));
+
+    public static final Block COBBLED_DEEP_SCORCH_STONE_WALL = registerBlock("cobbled_deep_scorch_stone_wall",
+            new WallBlock(FabricBlockSettings.copyOf(OuterWorldBlocks.COBBLED_SCORCH_STONE)
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+                    .requiresTool()
+                    .strength(3.5f, 6.0f)
+                    .sounds(BlockSoundGroup.STONE)
+                    .solid()));
+
+    public static final Block DEEP_SCORCH_STONE_BRICKS = registerBlock("deep_scorch_stone_bricks",
+            new Block(FabricBlockSettings.copy(Blocks.STONE_BRICKS)
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+                    .requiresTool()
+                    .strength(3.5f, 6.0f)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block DEEP_SCORCH_STONE_BRICK_STAIRS = registerBlock("deep_scorch_stone_brick_stairs",
+            new StairsBlock(SCORCH_STONE_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(SCORCH_STONE_BRICKS)
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+                    .requiresTool()
+                    .strength(3.5f, 6.0f)
+                    .sounds(BlockSoundGroup.STONE)));
+    public static final Block DEEP_SCORCH_STONE_BRICK_SLAB = registerBlock("deep_scorch_stone_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_SLAB)
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
+                    .requiresTool()
+                    .strength(3.5f, 6.0f)));
+
+    public static final Block DEEP_SCORCH_STONE_BRICK_WALL = registerBlock("deep_scorch_stone_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICKS)
+                    .mapColor(MapColor.TERRACOTTA_ORANGE)
                     .requiresTool()
                     .strength(3.5f, 6.0f)
                     .sounds(BlockSoundGroup.STONE)

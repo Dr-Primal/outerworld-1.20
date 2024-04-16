@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "outerworld:deep_violet_stone_bricks"
+  },
+  "result": "outerworld:deep_violet_stone_brick_wall"
+}

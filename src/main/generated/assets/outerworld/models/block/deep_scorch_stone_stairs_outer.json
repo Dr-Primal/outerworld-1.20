@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "outerworld:block/deep_scorch_stone",
+    "side": "outerworld:block/deep_scorch_stone",
+    "top": "outerworld:block/deep_scorch_stone"
+  }
+}

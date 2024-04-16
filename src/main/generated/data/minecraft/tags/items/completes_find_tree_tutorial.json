@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "outerworld:autumn_maple_log",
+    "outerworld:autumn_maple_wood",
+    "outerworld:stripped_autumn_maple_log",
+    "outerworld:stripped_autumn_maple_wood",
+    "outerworld:primuberant_log",
+    "outerworld:primuberant_wood",
+    "outerworld:stripped_primuberant_log",
+    "outerworld:stripped_primuberant_wood"
+  ]
+}

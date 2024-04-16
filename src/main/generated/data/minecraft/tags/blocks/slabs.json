@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "outerworld:violet_stone_slab",
+    "outerworld:cobbled_violet_stone_slab",
+    "outerworld:violet_stone_brick_slab",
+    "outerworld:deep_violet_stone_slab",
+    "outerworld:cobbled_deep_violet_stone_slab",
+    "outerworld:deep_violet_stone_brick_slab",
+    "outerworld:scorch_stone_slab",
+    "outerworld:cobbled_scorch_stone_slab",
+    "outerworld:scorch_stone_brick_slab",
+    "outerworld:deep_scorch_stone_slab",
+    "outerworld:cobbled_deep_scorch_stone_slab",
+    "outerworld:deep_scorch_stone_brick_slab"
+  ]
+}

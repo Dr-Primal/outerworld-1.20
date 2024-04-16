@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "outerworld:block/scorch_stone_slab"
+    },
+    "type=double": {
+      "model": "outerworld:block/scorch_stone"
+    },
+    "type=top": {
+      "model": "outerworld:block/scorch_stone_slab_top"
+    }
+  }
+}

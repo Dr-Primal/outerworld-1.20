@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "outerworld:violet_stone_button",
+    "outerworld:deep_violet_stone_button",
+    "outerworld:scorch_stone_button",
+    "outerworld:deep_scorch_stone_button"
+  ]
+}

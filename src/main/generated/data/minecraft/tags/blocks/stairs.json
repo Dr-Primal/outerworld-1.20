@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "outerworld:violet_stone_stairs",
+    "outerworld:cobbled_violet_stone_stairs",
+    "outerworld:violet_stone_brick_stairs",
+    "outerworld:deep_violet_stone_stairs",
+    "outerworld:cobbled_deep_violet_stone_stairs",
+    "outerworld:deep_violet_stone_brick_stairs",
+    "outerworld:scorch_stone_stairs",
+    "outerworld:cobbled_scorch_stone_stairs",
+    "outerworld:scorch_stone_brick_stairs",
+    "outerworld:deep_scorch_stone_stairs",
+    "outerworld:cobbled_deep_scorch_stone_stairs",
+    "outerworld:deep_scorch_stone_brick_stairs"
+  ]
+}

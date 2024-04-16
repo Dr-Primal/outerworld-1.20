@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "outerworld:block/deep_violet_stone"
+  }
+}

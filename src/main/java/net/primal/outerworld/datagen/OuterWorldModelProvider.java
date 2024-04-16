@@ -50,6 +50,40 @@ public class OuterWorldModelProvider extends FabricModelProvider {
         deepVioletStoneBrickPool.slab(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_SLAB);
         deepVioletStoneBrickPool.wall(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_WALL);
 
+        BlockStateModelGenerator.BlockTexturePool scorchStonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(OuterWorldBlocks.SCORCH_STONE);
+        BlockStateModelGenerator.BlockTexturePool cobbledScorchStonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(OuterWorldBlocks.COBBLED_SCORCH_STONE);
+        BlockStateModelGenerator.BlockTexturePool scorchStoneBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(OuterWorldBlocks.SCORCH_STONE_BRICKS);
+
+        scorchStonePool.stairs(OuterWorldBlocks.SCORCH_STONE_STAIRS);
+        scorchStonePool.slab(OuterWorldBlocks.SCORCH_STONE_SLAB);
+        scorchStonePool.button(OuterWorldBlocks.SCORCH_STONE_BUTTON);
+        scorchStonePool.pressurePlate(OuterWorldBlocks.SCORCH_STONE_PRESSURE_PLATE);
+
+        cobbledScorchStonePool.stairs(OuterWorldBlocks.COBBLED_SCORCH_STONE_STAIRS);
+        cobbledScorchStonePool.slab(OuterWorldBlocks.COBBLED_SCORCH_STONE_SLAB);
+        cobbledScorchStonePool.wall(OuterWorldBlocks.COBBLED_SCORCH_STONE_WALL);
+
+        scorchStoneBrickPool.stairs(OuterWorldBlocks.SCORCH_STONE_BRICK_STAIRS);
+        scorchStoneBrickPool.slab(OuterWorldBlocks.SCORCH_STONE_BRICK_SLAB);
+        scorchStoneBrickPool.wall(OuterWorldBlocks.SCORCH_STONE_BRICK_WALL);
+
+        BlockStateModelGenerator.BlockTexturePool deepScorchStonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(OuterWorldBlocks.DEEP_SCORCH_STONE);
+        BlockStateModelGenerator.BlockTexturePool cobbledDeepScorchStonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE);
+        BlockStateModelGenerator.BlockTexturePool deepScorchStoneBrickPool = blockStateModelGenerator.registerCubeAllModelTexturePool(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICKS);
+
+        deepScorchStonePool.stairs(OuterWorldBlocks.DEEP_SCORCH_STONE_STAIRS);
+        deepScorchStonePool.slab(OuterWorldBlocks.DEEP_SCORCH_STONE_SLAB);
+        deepScorchStonePool.button(OuterWorldBlocks.DEEP_SCORCH_STONE_BUTTON);
+        deepScorchStonePool.pressurePlate(OuterWorldBlocks.DEEP_SCORCH_STONE_PRESSURE_PLATE);
+
+        cobbledDeepScorchStonePool.stairs(OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE_STAIRS);
+        cobbledDeepScorchStonePool.slab(OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE_SLAB);
+        cobbledDeepScorchStonePool.wall(OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE_WALL);
+
+        deepScorchStoneBrickPool.stairs(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICK_STAIRS);
+        deepScorchStoneBrickPool.slab(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICK_SLAB);
+        deepScorchStoneBrickPool.wall(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICK_WALL);
+
 
         BlockStateModelGenerator.BlockTexturePool autumnMaplePool = blockStateModelGenerator.registerCubeAllModelTexturePool(OuterWorldBlocks.AUTUMN_MAPLE_PLANKS);
         autumnMaplePool.family(OuterWorldBlocks.AUTUMN_MAPLE_FAMILY);

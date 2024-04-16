@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "outer_world_blocks",
+  "ingredients": [
+    {
+      "item": "outerworld:deep_scorch_stone"
+    }
+  ],
+  "result": {
+    "item": "outerworld:deep_scorch_stone_button"
+  }
+}

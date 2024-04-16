@@ -23,15 +23,21 @@ public class OuterWorldItemTagProvider extends FabricTagProvider.ItemTagProvider
 
         getOrCreateTagBuilder(ItemTags.STONE_CRAFTING_MATERIALS)
                 .add(OuterWorldBlocks.COBBLED_VIOLET_STONE.asItem())
-                .add(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE.asItem());
+                .add(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE.asItem())
+                .add(OuterWorldBlocks.COBBLED_SCORCH_STONE.asItem())
+                .add(OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE.asItem());
 
         getOrCreateTagBuilder(ItemTags.STONE_TOOL_MATERIALS)
                 .add(OuterWorldBlocks.COBBLED_VIOLET_STONE.asItem())
-                .add(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE.asItem());
+                .add(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE.asItem())
+                .add(OuterWorldBlocks.COBBLED_SCORCH_STONE.asItem())
+                .add(OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE.asItem());;
 
         getOrCreateTagBuilder(ItemTags.STONE_BUTTONS)
                 .add(OuterWorldBlocks.VIOLET_STONE_BUTTON.asItem())
-                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_BUTTON.asItem());
+                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_BUTTON.asItem())
+                .add(OuterWorldBlocks.SCORCH_STONE_BUTTON.asItem())
+                .add(OuterWorldBlocks.DEEP_SCORCH_STONE_BUTTON.asItem());
 
         getOrCreateTagBuilder(ItemTags.PLANKS)
                 .add(OuterWorldBlocks.AUTUMN_MAPLE_PLANKS.asItem())
@@ -47,7 +53,13 @@ public class OuterWorldItemTagProvider extends FabricTagProvider.ItemTagProvider
                 .add(OuterWorldBlocks.VIOLET_STONE_BRICK_SLAB.asItem())
                 .add(OuterWorldBlocks.DEEP_VIOLET_STONE_SLAB.asItem())
                 .add(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE_SLAB.asItem())
-                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_SLAB.asItem());
+                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_SLAB.asItem())
+                .add(OuterWorldBlocks.SCORCH_STONE_SLAB.asItem())
+                .add(OuterWorldBlocks.COBBLED_SCORCH_STONE_SLAB.asItem())
+                .add(OuterWorldBlocks.SCORCH_STONE_BRICK_SLAB.asItem())
+                .add(OuterWorldBlocks.DEEP_SCORCH_STONE_SLAB.asItem())
+                .add(OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE_SLAB.asItem())
+                .add(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICK_SLAB.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_STAIRS)
                 .add(OuterWorldBlocks.AUTUMN_MAPLE_STAIRS.asItem())
@@ -59,7 +71,13 @@ public class OuterWorldItemTagProvider extends FabricTagProvider.ItemTagProvider
                 .add(OuterWorldBlocks.VIOLET_STONE_BRICK_STAIRS.asItem())
                 .add(OuterWorldBlocks.DEEP_VIOLET_STONE_STAIRS.asItem())
                 .add(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE_STAIRS.asItem())
-                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_STAIRS.asItem());
+                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_STAIRS.asItem())
+                .add(OuterWorldBlocks.SCORCH_STONE_STAIRS.asItem())
+                .add(OuterWorldBlocks.COBBLED_SCORCH_STONE_STAIRS.asItem())
+                .add(OuterWorldBlocks.SCORCH_STONE_BRICK_STAIRS.asItem())
+                .add(OuterWorldBlocks.DEEP_SCORCH_STONE_STAIRS.asItem())
+                .add(OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE_STAIRS.asItem())
+                .add(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICK_STAIRS.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_FENCES)
                 .add(OuterWorldBlocks.AUTUMN_MAPLE_FENCE.asItem())
@@ -73,7 +91,11 @@ public class OuterWorldItemTagProvider extends FabricTagProvider.ItemTagProvider
                 .add(OuterWorldBlocks.COBBLED_VIOLET_STONE_WALL.asItem())
                 .add(OuterWorldBlocks.VIOLET_STONE_BRICK_WALL.asItem())
                 .add(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE_WALL.asItem())
-                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_WALL.asItem());
+                .add(OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_WALL.asItem())
+                .add(OuterWorldBlocks.COBBLED_SCORCH_STONE_WALL.asItem())
+                .add(OuterWorldBlocks.SCORCH_STONE_BRICK_WALL.asItem())
+                .add(OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE_WALL.asItem())
+                .add(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICK_WALL.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_BUTTONS)
                 .add(OuterWorldBlocks.AUTUMN_MAPLE_BUTTON.asItem())

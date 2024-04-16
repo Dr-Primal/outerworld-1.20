@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "outerworld:scorch_stone_bricks"
+  },
+  "result": "outerworld:scorch_stone_brick_wall"
+}

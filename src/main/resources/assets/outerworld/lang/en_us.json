@@ -58,6 +58,36 @@
 
 
 
+  "block.outerworld.scorch_stone": "Scorch Stone",
+  "block.outerworld.scorch_stone_stairs": "Scorch Stone Stairs",
+  "block.outerworld.scorch_stone_slab": "Scorch Stone Slab",
+  "block.outerworld.scorch_stone_button": "Scorch Stone Button",
+  "block.outerworld.scorch_stone_pressure_plate": "Scorch Stone Pressure Plate",
+  "block.outerworld.cobbled_scorch_stone": "Cobbled Scorch Stone",
+  "block.outerworld.cobbled_scorch_stone_stairs": "Cobbled Scorch Stone Stairs",
+  "block.outerworld.cobbled_scorch_stone_slab": "Cobbled Scorch Stone Slab",
+  "block.outerworld.cobbled_scorch_stone_wall": "Cobbled Scorch Stone Wall",
+  "block.outerworld.scorch_stone_bricks": "Scorch Stone Bricks",
+  "block.outerworld.scorch_stone_brick_stairs": "Scorch Stone Brick Stairs",
+  "block.outerworld.scorch_stone_brick_slab": "Scorch Stone Brick Slab",
+  "block.outerworld.scorch_stone_brick_wall": "Scorch Stone Brick Wall",
+
+  "block.outerworld.deep_scorch_stone": "Deep Scorch Stone",
+  "block.outerworld.deep_scorch_stone_stairs": "Deep Scorch Stone Stairs",
+  "block.outerworld.deep_scorch_stone_slab": "Deep Scorch Stone Slab",
+  "block.outerworld.deep_scorch_stone_button": "Deep Scorch Stone Button",
+  "block.outerworld.deep_scorch_stone_pressure_plate": "Deep Scorch Stone Pressure Plate",
+  "block.outerworld.cobbled_deep_scorch_stone": "Cobbled Deep Scorch Stone",
+  "block.outerworld.cobbled_deep_scorch_stone_stairs": "Cobbled Deep Scorch Stone Stairs",
+  "block.outerworld.cobbled_deep_scorch_stone_slab": "Cobbled Deep Scorch Stone Slab",
+  "block.outerworld.cobbled_deep_scorch_stone_wall": "Cobbled Deep Scorch Stone Wall",
+  "block.outerworld.deep_scorch_stone_bricks": "Deep Scorch Stone Bricks",
+  "block.outerworld.deep_scorch_stone_brick_stairs": "Deep Scorch Stone Brick Stairs",
+  "block.outerworld.deep_scorch_stone_brick_slab": "Deep Scorch Stone Brick Slab",
+  "block.outerworld.deep_scorch_stone_brick_wall": "Deep Scorch Stone Brick Wall",
+
+
+
   "block.outerworld.violet_stone_ruby_ore": "Violet Stone Ruby Ore",
   "block.outerworld.deep_violet_stone_ruby_ore": "Deep Violet Stone Ruby Ore",
 

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "outerworld:block/deep_violet_stone"
+  }
+}

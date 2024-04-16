@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "outerworld:block/cobbled_violet_stone"
+  }
+}

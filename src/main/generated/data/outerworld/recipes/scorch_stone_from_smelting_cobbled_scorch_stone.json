@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "outer_world_blocks",
+  "ingredient": {
+    "item": "outerworld:cobbled_scorch_stone"
+  },
+  "result": "outerworld:scorch_stone"
+}
