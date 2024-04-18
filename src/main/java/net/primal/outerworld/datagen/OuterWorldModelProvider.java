@@ -84,6 +84,24 @@ public class OuterWorldModelProvider extends FabricModelProvider {
         deepScorchStoneBrickPool.slab(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICK_SLAB);
         deepScorchStoneBrickPool.wall(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICK_WALL);
 
+        BlockStateModelGenerator.BlockTexturePool gneissPool = blockStateModelGenerator.registerCubeAllModelTexturePool(OuterWorldBlocks.GNEISS);
+        BlockStateModelGenerator.BlockTexturePool polishedGneissPool = blockStateModelGenerator.registerCubeAllModelTexturePool(OuterWorldBlocks.POLISHED_GNEISS);
+
+        gneissPool.stairs(OuterWorldBlocks.GNEISS_STAIRS);
+        gneissPool.slab(OuterWorldBlocks.GNEISS_SLAB);
+        gneissPool.wall(OuterWorldBlocks.GNEISS_WALL);
+        polishedGneissPool.stairs(OuterWorldBlocks.POLISHED_GNEISS_STAIRS);
+        polishedGneissPool.slab(OuterWorldBlocks.POLISHED_GNEISS_SLAB);
+
+        BlockStateModelGenerator.BlockTexturePool syenitePool = blockStateModelGenerator.registerCubeAllModelTexturePool(OuterWorldBlocks.SYENITE);
+        BlockStateModelGenerator.BlockTexturePool polishedSyenitePool = blockStateModelGenerator.registerCubeAllModelTexturePool(OuterWorldBlocks.POLISHED_SYENITE);
+
+        syenitePool.stairs(OuterWorldBlocks.SYENITE_STAIRS);
+        syenitePool.slab(OuterWorldBlocks.SYENITE_SLAB);
+        syenitePool.wall(OuterWorldBlocks.SYENITE_WALL);
+        polishedSyenitePool.stairs(OuterWorldBlocks.POLISHED_SYENITE_STAIRS);
+        polishedSyenitePool.slab(OuterWorldBlocks.POLISHED_SYENITE_SLAB);
+
 
         BlockStateModelGenerator.BlockTexturePool autumnMaplePool = blockStateModelGenerator.registerCubeAllModelTexturePool(OuterWorldBlocks.AUTUMN_MAPLE_PLANKS);
         autumnMaplePool.family(OuterWorldBlocks.AUTUMN_MAPLE_FAMILY);
@@ -93,6 +111,7 @@ public class OuterWorldModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(OuterWorldBlocks.PURPLE_ICE);
         blockStateModelGenerator.registerSimpleCubeAll(OuterWorldBlocks.RUBY_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(OuterWorldBlocks.BLUE_CALCITE);
 
         blockStateModelGenerator.registerSimpleCubeAll(OuterWorldBlocks.VIOLET_STONE_RUBY_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(OuterWorldBlocks.DEEP_VIOLET_STONE_RUBY_ORE);

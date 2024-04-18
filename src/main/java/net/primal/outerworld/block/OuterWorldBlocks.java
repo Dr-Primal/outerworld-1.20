@@ -40,6 +40,12 @@ public class OuterWorldBlocks {
                     .strength(5.0f, 6.0f)
                     .sounds(BlockSoundGroup.METAL)));
 
+    public static final Block BLUE_CALCITE = registerBlock("blue_calcite",
+            new Block(FabricBlockSettings.copy(Blocks.CALCITE)
+                    .mapColor(MapColor.DIAMOND_BLUE)
+                    .requiresTool()
+                    .strength(0.75f)));
+
     //Ores
     public static final Block VIOLET_STONE_RUBY_ORE = registerBlock("violet_stone_ruby_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.STONE)
@@ -407,6 +413,104 @@ public class OuterWorldBlocks {
                     .strength(3.5f, 6.0f)
                     .sounds(BlockSoundGroup.STONE)
                     .solid()));
+
+
+
+    //Gneiss
+    public static final Block GNEISS = registerBlock("gneiss",
+            new Block(FabricBlockSettings.copy(Blocks.GRANITE)
+                    .mapColor(MapColor.DIRT_BROWN)
+                    .requiresTool()
+                    .strength(1.5f, 6.0f)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block GNEISS_STAIRS = registerBlock("gneiss_stairs",
+            new StairsBlock(GNEISS.getDefaultState(), FabricBlockSettings.copyOf(GNEISS)
+                    .mapColor(MapColor.DIRT_BROWN)
+                    .requiresTool()
+                    .strength(1.5f, 6.0f)
+                    .sounds(BlockSoundGroup.STONE)));
+    public static final Block GNEISS_SLAB = registerBlock("gneiss_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(OuterWorldBlocks.GNEISS)
+                    .mapColor(MapColor.DIRT_BROWN)
+                    .requiresTool()
+                    .strength(1.5f, 6.0f)));
+
+    public static final Block GNEISS_WALL = registerBlock("gneiss_wall",
+            new WallBlock(FabricBlockSettings.copyOf(OuterWorldBlocks.GNEISS)
+                    .mapColor(MapColor.DIRT_BROWN)
+                    .requiresTool()
+                    .strength(1.5f, 6.0f)
+                    .sounds(BlockSoundGroup.STONE)
+                    .solid()));
+
+    public static final Block POLISHED_GNEISS = registerBlock("polished_gneiss",
+            new Block(FabricBlockSettings.copy(Blocks.POLISHED_GRANITE)
+                    .mapColor(MapColor.DIRT_BROWN)
+                    .requiresTool()
+                    .strength(1.5f, 6.0f)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_GNEISS_STAIRS = registerBlock("polished_gneiss_stairs",
+            new StairsBlock(GNEISS.getDefaultState(), FabricBlockSettings.copyOf(GNEISS)
+                    .mapColor(MapColor.DIRT_BROWN)
+                    .requiresTool()
+                    .strength(1.5f, 6.0f)
+                    .sounds(BlockSoundGroup.STONE)));
+    public static final Block POLISHED_GNEISS_SLAB = registerBlock("polished_gneiss_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(OuterWorldBlocks.GNEISS)
+                    .mapColor(MapColor.DIRT_BROWN)
+                    .requiresTool()
+                    .strength(1.5f, 6.0f)));
+
+
+    //Syenite
+    public static final Block SYENITE = registerBlock("syenite",
+            new Block(FabricBlockSettings.copy(Blocks.CALCITE)
+                    .mapColor(MapColor.TERRACOTTA_WHITE)
+                    .requiresTool()
+                    .strength(1f, 6.0f)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block SYENITE_STAIRS = registerBlock("syenite_stairs",
+            new StairsBlock(GNEISS.getDefaultState(), FabricBlockSettings.copyOf(SYENITE)
+                    .mapColor(MapColor.TERRACOTTA_WHITE)
+                    .requiresTool()
+                    .strength(1f, 6.0f)
+                    .sounds(BlockSoundGroup.STONE)));
+    public static final Block SYENITE_SLAB = registerBlock("syenite_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(OuterWorldBlocks.SYENITE)
+                    .mapColor(MapColor.TERRACOTTA_WHITE)
+                    .requiresTool()
+                    .strength(1f, 6.0f)));
+
+    public static final Block SYENITE_WALL = registerBlock("syenite_wall",
+            new WallBlock(FabricBlockSettings.copyOf(OuterWorldBlocks.SYENITE)
+                    .mapColor(MapColor.TERRACOTTA_WHITE)
+                    .requiresTool()
+                    .strength(1f, 6.0f)
+                    .sounds(BlockSoundGroup.STONE)
+                    .solid()));
+
+    public static final Block POLISHED_SYENITE = registerBlock("polished_syenite",
+            new Block(FabricBlockSettings.copy(Blocks.POLISHED_DIORITE)
+                    .mapColor(MapColor.TERRACOTTA_WHITE)
+                    .requiresTool()
+                    .strength(1f, 6.0f)
+                    .sounds(BlockSoundGroup.STONE)));
+
+    public static final Block POLISHED_SYENITE_STAIRS = registerBlock("polished_syenite_stairs",
+            new StairsBlock(GNEISS.getDefaultState(), FabricBlockSettings.copyOf(SYENITE)
+                    .mapColor(MapColor.TERRACOTTA_WHITE)
+                    .requiresTool()
+                    .strength(1f, 6.0f)
+                    .sounds(BlockSoundGroup.STONE)));
+    public static final Block POLISHED_SYENITE_SLAB = registerBlock("polished_syenite_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(OuterWorldBlocks.SYENITE)
+                    .mapColor(MapColor.TERRACOTTA_WHITE)
+                    .requiresTool()
+                    .strength(1f, 6.0f)));
+
 
 
 

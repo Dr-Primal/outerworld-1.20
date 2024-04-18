@@ -12,6 +12,8 @@
     "outerworld:scorch_stone_brick_slab",
     "outerworld:deep_scorch_stone_slab",
     "outerworld:cobbled_deep_scorch_stone_slab",
-    "outerworld:deep_scorch_stone_brick_slab"
+    "outerworld:deep_scorch_stone_brick_slab",
+    "outerworld:gneiss_slab",
+    "outerworld:polished_gneiss_slab"
   ]
 }

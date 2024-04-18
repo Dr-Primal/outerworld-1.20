@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "outerworld:block/syenite",
+    "side": "outerworld:block/syenite",
+    "top": "outerworld:block/syenite"
+  }
+}

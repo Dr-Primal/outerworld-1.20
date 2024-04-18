@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "outerworld:block/polished_gneiss_slab"
+    },
+    "type=double": {
+      "model": "outerworld:block/polished_gneiss"
+    },
+    "type=top": {
+      "model": "outerworld:block/polished_gneiss_slab_top"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "outerworld:polished_syenite"
+  },
+  "result": "outerworld:polished_syenite_stairs"
+}

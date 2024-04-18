@@ -3,6 +3,7 @@
   "values": [
     "outerworld:purple_ice",
     "outerworld:ruby_block",
+    "outerworld:blue_calcite",
     "outerworld:violet_stone",
     "outerworld:violet_stone_stairs",
     "outerworld:violet_stone_slab",
@@ -55,6 +56,20 @@
     "outerworld:deep_scorch_stone_brick_stairs",
     "outerworld:deep_scorch_stone_brick_slab",
     "outerworld:deep_scorch_stone_brick_wall",
+    "outerworld:gneiss",
+    "outerworld:gneiss_stairs",
+    "outerworld:gneiss_slab",
+    "outerworld:gneiss_wall",
+    "outerworld:polished_gneiss",
+    "outerworld:polished_gneiss_stairs",
+    "outerworld:polished_gneiss_slab",
+    "outerworld:syenite",
+    "outerworld:syenite_stairs",
+    "outerworld:syenite_slab",
+    "outerworld:syenite_wall",
+    "outerworld:polished_syenite",
+    "outerworld:polished_syenite_stairs",
+    "outerworld:polished_syenite_slab",
     "outerworld:violet_stone_ruby_ore",
     "outerworld:deep_violet_stone_ruby_ore"
   ]

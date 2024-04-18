@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "M": {
+      "item": "outerworld:syenite"
+    }
+  },
+  "pattern": [
+    "MM ",
+    "MM ",
+    "   "
+  ],
+  "result": {
+    "count": 4,
+    "item": "outerworld:polished_syenite"
+  },
+  "show_notification": true
+}

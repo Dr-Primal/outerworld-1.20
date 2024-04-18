@@ -17,8 +17,8 @@ public class OuterWorldItemGroups {
                 .icon(() -> new ItemStack(OuterWorldBlocks.PURPLE_ICE)).entries((displayContext, entries) -> {
 
                     entries.add(OuterWorldBlocks.PURPLE_ICE);
-
                     entries.add(OuterWorldBlocks.RUBY_BLOCK);
+                    entries.add(OuterWorldBlocks.BLUE_CALCITE);
 
                     entries.add(OuterWorldBlocks.VIOLET_STONE);
                     entries.add(OuterWorldBlocks.VIOLET_STONE_STAIRS);
@@ -84,6 +84,22 @@ public class OuterWorldItemGroups {
                     entries.add(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICK_STAIRS);
                     entries.add(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICK_SLAB);
                     entries.add(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICK_WALL);
+
+                    entries.add(OuterWorldBlocks.GNEISS);
+                    entries.add(OuterWorldBlocks.GNEISS_STAIRS);
+                    entries.add(OuterWorldBlocks.GNEISS_SLAB);
+                    entries.add(OuterWorldBlocks.GNEISS_WALL);
+                    entries.add(OuterWorldBlocks.POLISHED_GNEISS);
+                    entries.add(OuterWorldBlocks.POLISHED_GNEISS_STAIRS);
+                    entries.add(OuterWorldBlocks.POLISHED_GNEISS_SLAB);
+
+                    entries.add(OuterWorldBlocks.SYENITE);
+                    entries.add(OuterWorldBlocks.SYENITE_STAIRS);
+                    entries.add(OuterWorldBlocks.SYENITE_SLAB);
+                    entries.add(OuterWorldBlocks.SYENITE_WALL);
+                    entries.add(OuterWorldBlocks.POLISHED_SYENITE);
+                    entries.add(OuterWorldBlocks.POLISHED_SYENITE_STAIRS);
+                    entries.add(OuterWorldBlocks.POLISHED_SYENITE_SLAB);
 
 
 

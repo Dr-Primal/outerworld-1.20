@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
 import net.primal.outerworld.block.OuterWorldBlocks;
-import net.primal.outerworld.entity.OuterWorldBoats;
 import net.primal.outerworld.item.OuterWorldItems;
 import net.primal.outerworld.util.OuterWorldTags;
 
@@ -31,7 +30,7 @@ public class OuterWorldItemTagProvider extends FabricTagProvider.ItemTagProvider
                 .add(OuterWorldBlocks.COBBLED_VIOLET_STONE.asItem())
                 .add(OuterWorldBlocks.COBBLED_DEEP_VIOLET_STONE.asItem())
                 .add(OuterWorldBlocks.COBBLED_SCORCH_STONE.asItem())
-                .add(OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE.asItem());;
+                .add(OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE.asItem());
 
         getOrCreateTagBuilder(ItemTags.STONE_BUTTONS)
                 .add(OuterWorldBlocks.VIOLET_STONE_BUTTON.asItem())
@@ -59,7 +58,11 @@ public class OuterWorldItemTagProvider extends FabricTagProvider.ItemTagProvider
                 .add(OuterWorldBlocks.SCORCH_STONE_BRICK_SLAB.asItem())
                 .add(OuterWorldBlocks.DEEP_SCORCH_STONE_SLAB.asItem())
                 .add(OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE_SLAB.asItem())
-                .add(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICK_SLAB.asItem());
+                .add(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICK_SLAB.asItem())
+                .add(OuterWorldBlocks.GNEISS_SLAB.asItem())
+                .add(OuterWorldBlocks.POLISHED_GNEISS_SLAB.asItem())
+                .add(OuterWorldBlocks.SYENITE_SLAB.asItem())
+                .add(OuterWorldBlocks.POLISHED_SYENITE_SLAB.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_STAIRS)
                 .add(OuterWorldBlocks.AUTUMN_MAPLE_STAIRS.asItem())
@@ -77,7 +80,11 @@ public class OuterWorldItemTagProvider extends FabricTagProvider.ItemTagProvider
                 .add(OuterWorldBlocks.SCORCH_STONE_BRICK_STAIRS.asItem())
                 .add(OuterWorldBlocks.DEEP_SCORCH_STONE_STAIRS.asItem())
                 .add(OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE_STAIRS.asItem())
-                .add(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICK_STAIRS.asItem());
+                .add(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICK_STAIRS.asItem())
+                .add(OuterWorldBlocks.GNEISS_STAIRS.asItem())
+                .add(OuterWorldBlocks.POLISHED_GNEISS_STAIRS.asItem())
+                .add(OuterWorldBlocks.SYENITE_STAIRS.asItem())
+                .add(OuterWorldBlocks.POLISHED_SYENITE_STAIRS.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_FENCES)
                 .add(OuterWorldBlocks.AUTUMN_MAPLE_FENCE.asItem())
@@ -95,7 +102,9 @@ public class OuterWorldItemTagProvider extends FabricTagProvider.ItemTagProvider
                 .add(OuterWorldBlocks.COBBLED_SCORCH_STONE_WALL.asItem())
                 .add(OuterWorldBlocks.SCORCH_STONE_BRICK_WALL.asItem())
                 .add(OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE_WALL.asItem())
-                .add(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICK_WALL.asItem());
+                .add(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICK_WALL.asItem())
+                .add(OuterWorldBlocks.GNEISS_WALL.asItem())
+                .add(OuterWorldBlocks.SYENITE_WALL.asItem());
 
         getOrCreateTagBuilder(ItemTags.WOODEN_BUTTONS)
                 .add(OuterWorldBlocks.AUTUMN_MAPLE_BUTTON.asItem())

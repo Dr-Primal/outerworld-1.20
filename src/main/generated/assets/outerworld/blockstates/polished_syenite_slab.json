@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "outerworld:block/polished_syenite_slab"
+    },
+    "type=double": {
+      "model": "outerworld:block/polished_syenite"
+    },
+    "type=top": {
+      "model": "outerworld:block/polished_syenite_slab_top"
+    }
+  }
+}

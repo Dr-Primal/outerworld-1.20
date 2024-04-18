@@ -223,8 +223,6 @@ public class OuterWorldRecipeProvider extends FabricRecipeProvider {
         offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_SLAB, OuterWorldBlocks.DEEP_VIOLET_STONE_BRICKS);
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.DEEP_VIOLET_STONE_BRICK_WALL, OuterWorldBlocks.DEEP_VIOLET_STONE_BRICKS);
 
-
-
         //Scorch Stone
         createStairsRecipe(OuterWorldBlocks.SCORCH_STONE_STAIRS.asItem(), Ingredient.ofItems(OuterWorldBlocks.SCORCH_STONE.asItem()))
                 .criterion(hasItem(OuterWorldBlocks.SCORCH_STONE.asItem()),
@@ -233,14 +231,12 @@ public class OuterWorldRecipeProvider extends FabricRecipeProvider {
         offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.SCORCH_STONE_SLAB, OuterWorldBlocks.SCORCH_STONE);
         offerSingleOutputShapelessRecipe(exporter, OuterWorldBlocks.SCORCH_STONE_BUTTON, OuterWorldBlocks.SCORCH_STONE, "outer_world_blocks");
         offerPressurePlateRecipe(exporter, OuterWorldBlocks.SCORCH_STONE_PRESSURE_PLATE, OuterWorldBlocks.SCORCH_STONE);
-
         createStairsRecipe(OuterWorldBlocks.COBBLED_SCORCH_STONE_STAIRS.asItem(), Ingredient.ofItems(OuterWorldBlocks.COBBLED_SCORCH_STONE.asItem()))
                 .criterion(hasItem(OuterWorldBlocks.COBBLED_SCORCH_STONE.asItem()),
                         conditionsFromItem(OuterWorldBlocks.COBBLED_SCORCH_STONE.asItem()))
                 .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.COBBLED_SCORCH_STONE_STAIRS.asItem())));
         offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.COBBLED_SCORCH_STONE_SLAB, OuterWorldBlocks.COBBLED_SCORCH_STONE);
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.COBBLED_SCORCH_STONE_WALL, OuterWorldBlocks.COBBLED_SCORCH_STONE);
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.SCORCH_STONE_BRICKS, 4)
                 .pattern("MM ")
                 .pattern("MM ")
@@ -264,14 +260,12 @@ public class OuterWorldRecipeProvider extends FabricRecipeProvider {
         offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.DEEP_SCORCH_STONE_SLAB, OuterWorldBlocks.DEEP_SCORCH_STONE);
         offerSingleOutputShapelessRecipe(exporter, OuterWorldBlocks.DEEP_SCORCH_STONE_BUTTON, OuterWorldBlocks.DEEP_SCORCH_STONE, "outer_world_blocks");
         offerPressurePlateRecipe(exporter, OuterWorldBlocks.DEEP_SCORCH_STONE_PRESSURE_PLATE, OuterWorldBlocks.DEEP_SCORCH_STONE);
-
         createStairsRecipe(OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE_STAIRS.asItem(), Ingredient.ofItems(OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE.asItem()))
                 .criterion(hasItem(OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE.asItem()),
                         conditionsFromItem(OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE.asItem()))
                 .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE_STAIRS.asItem())));
         offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE_SLAB, OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE);
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE_WALL, OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE);
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.DEEP_SCORCH_STONE_BRICKS, 4)
                 .pattern("MM ")
                 .pattern("MM ")
@@ -286,6 +280,48 @@ public class OuterWorldRecipeProvider extends FabricRecipeProvider {
                 .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.DEEP_SCORCH_STONE_BRICK_STAIRS.asItem())));
         offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.DEEP_SCORCH_STONE_BRICK_SLAB, OuterWorldBlocks.DEEP_SCORCH_STONE_BRICKS);
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.DEEP_SCORCH_STONE_BRICK_WALL, OuterWorldBlocks.DEEP_SCORCH_STONE_BRICKS);
+
+        //Gneiss
+        createStairsRecipe(OuterWorldBlocks.GNEISS_STAIRS.asItem(), Ingredient.ofItems(OuterWorldBlocks.GNEISS.asItem()))
+                .criterion(hasItem(OuterWorldBlocks.GNEISS.asItem()),
+                        conditionsFromItem(OuterWorldBlocks.GNEISS.asItem()))
+                .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.GNEISS.asItem())));
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.GNEISS_SLAB, OuterWorldBlocks.GNEISS);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.GNEISS_WALL, OuterWorldBlocks.GNEISS);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.POLISHED_GNEISS, 4)
+                .pattern("MM ")
+                .pattern("MM ")
+                .pattern("   ")
+                .input('M', OuterWorldBlocks.GNEISS.asItem())
+                .criterion(hasItem(OuterWorldBlocks.GNEISS.asItem()),
+                        conditionsFromItem(OuterWorldBlocks.GNEISS.asItem()))
+                .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.POLISHED_GNEISS.asItem())));
+        createStairsRecipe(OuterWorldBlocks.POLISHED_GNEISS_STAIRS.asItem(), Ingredient.ofItems(OuterWorldBlocks.POLISHED_GNEISS.asItem()))
+                .criterion(hasItem(OuterWorldBlocks.POLISHED_GNEISS.asItem()),
+                        conditionsFromItem(OuterWorldBlocks.POLISHED_GNEISS.asItem()))
+                .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.POLISHED_GNEISS_STAIRS.asItem())));
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.POLISHED_GNEISS_SLAB, OuterWorldBlocks.POLISHED_GNEISS);
+
+        //Syenite
+        createStairsRecipe(OuterWorldBlocks.SYENITE_STAIRS.asItem(), Ingredient.ofItems(OuterWorldBlocks.SYENITE.asItem()))
+                .criterion(hasItem(OuterWorldBlocks.SYENITE.asItem()),
+                        conditionsFromItem(OuterWorldBlocks.SYENITE.asItem()))
+                .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.SYENITE.asItem())));
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.SYENITE_SLAB, OuterWorldBlocks.SYENITE);
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.SYENITE_WALL, OuterWorldBlocks.SYENITE);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.POLISHED_SYENITE, 4)
+                .pattern("MM ")
+                .pattern("MM ")
+                .pattern("   ")
+                .input('M', OuterWorldBlocks.SYENITE.asItem())
+                .criterion(hasItem(OuterWorldBlocks.SYENITE.asItem()),
+                        conditionsFromItem(OuterWorldBlocks.SYENITE.asItem()))
+                .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.POLISHED_SYENITE.asItem())));
+        createStairsRecipe(OuterWorldBlocks.POLISHED_SYENITE_STAIRS.asItem(), Ingredient.ofItems(OuterWorldBlocks.POLISHED_SYENITE.asItem()))
+                .criterion(hasItem(OuterWorldBlocks.POLISHED_SYENITE.asItem()),
+                        conditionsFromItem(OuterWorldBlocks.POLISHED_SYENITE.asItem()))
+                .offerTo(exporter, new Identifier(getRecipeName(OuterWorldBlocks.POLISHED_SYENITE_STAIRS.asItem())));
+        offerSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.POLISHED_SYENITE_SLAB, OuterWorldBlocks.POLISHED_SYENITE);
 
         //Ruby Tools and Armor
         //Ruby + Ruby Block
@@ -397,7 +433,6 @@ public class OuterWorldRecipeProvider extends FabricRecipeProvider {
                         conditionsFromItem(Items.STICK))
                 .offerTo(exporter, new Identifier(getRecipeName(OuterWorldItems.RUBY_HOE)));
 
-
         /*
          *Smelting/Blasting Recipes
          */
@@ -415,8 +450,6 @@ public class OuterWorldRecipeProvider extends FabricRecipeProvider {
         //Blasting
         offerBlasting(exporter, List.of(OuterWorldBlocks.VIOLET_STONE_RUBY_ORE), RecipeCategory.MISC, OuterWorldItems.RUBY, 0.7f, 100, "outer_world_items");
         offerBlasting(exporter, List.of(OuterWorldBlocks.DEEP_VIOLET_STONE_RUBY_ORE), RecipeCategory.MISC, OuterWorldItems.RUBY, 0.7f, 100, "outer_world_items");
-
-
 
         /*
          *Stone Cutter Recipes
@@ -487,6 +520,26 @@ public class OuterWorldRecipeProvider extends FabricRecipeProvider {
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE_STAIRS, OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE_SLAB, OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE, 2);
         offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE_WALL, OuterWorldBlocks.COBBLED_DEEP_SCORCH_STONE);
+
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.GNEISS_STAIRS, OuterWorldBlocks.GNEISS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.GNEISS_SLAB, OuterWorldBlocks.GNEISS, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.GNEISS_WALL, OuterWorldBlocks.GNEISS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.POLISHED_GNEISS, OuterWorldBlocks.GNEISS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.POLISHED_GNEISS_STAIRS, OuterWorldBlocks.GNEISS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.POLISHED_GNEISS_SLAB, OuterWorldBlocks.GNEISS, 2);
+
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.POLISHED_GNEISS_STAIRS, OuterWorldBlocks.POLISHED_GNEISS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.POLISHED_GNEISS_SLAB, OuterWorldBlocks.POLISHED_GNEISS, 2);
+
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.SYENITE_STAIRS, OuterWorldBlocks.SYENITE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.SYENITE_SLAB, OuterWorldBlocks.SYENITE, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.SYENITE_WALL, OuterWorldBlocks.SYENITE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.POLISHED_SYENITE, OuterWorldBlocks.SYENITE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.POLISHED_SYENITE_STAIRS, OuterWorldBlocks.SYENITE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.POLISHED_SYENITE_SLAB, OuterWorldBlocks.SYENITE, 2);
+
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.POLISHED_SYENITE_STAIRS, OuterWorldBlocks.POLISHED_SYENITE);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OuterWorldBlocks.POLISHED_SYENITE_SLAB, OuterWorldBlocks.POLISHED_SYENITE, 2);
 
     }
 }

@@ -88,6 +88,27 @@
 
 
 
+  "block.outerworld.gneiss": "Gneiss",
+  "block.outerworld.gneiss_stairs": "Gneiss Stairs",
+  "block.outerworld.gneiss_slab": "Gneiss Slab",
+  "block.outerworld.gneiss_wall": "Gneiss Wall",
+  "block.outerworld.polished_gneiss": "Polished Gneiss",
+  "block.outerworld.polished_gneiss_stairs": "Polished Gneiss Stairs",
+  "block.outerworld.polished_gneiss_slab": "Polished Gneiss Slab",
+
+
+
+  "block.outerworld.syenite": "Syenite",
+  "block.outerworld.syenite_stairs": "Syenite Stairs",
+  "block.outerworld.syenite_slab": "Syenite Slab",
+  "block.outerworld.syenite_wall": "Syenite Wall",
+  "block.outerworld.polished_syenite": "Polished Syenite",
+  "block.outerworld.polished_syenite_stairs": "Polished Syenite Stairs",
+  "block.outerworld.polished_syenite_slab": "Polished Syenite Slab",
+  "block.outerworld.blue_calcite": "Blue Calcite",
+
+
+
   "block.outerworld.violet_stone_ruby_ore": "Violet Stone Ruby Ore",
   "block.outerworld.deep_violet_stone_ruby_ore": "Deep Violet Stone Ruby Ore",
 

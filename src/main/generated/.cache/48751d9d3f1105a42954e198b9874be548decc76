@@ -1,19 +1,19 @@
-// 1.20.1	2024-04-16T11:05:22.8478912	OuterWorld/Tags for minecraft:block
+// 1.20.1	2024-04-18T02:05:10.1336763	OuterWorld/Tags for minecraft:block
 f010c7d0444c44afc1443b60645cc6abfd83c717 data\minecraft\tags\blocks\logs_that_burn.json
 8528b18e8030242c2429dc7a90489771ce0089e5 data\minecraft\tags\blocks\wooden_doors.json
 614f1470da2955bb2bfc8569132a3cccea4d1d88 data\minecraft\tags\blocks\wooden_slabs.json
 271f89788515d39c96c160fd04b7f2ecc68ec261 data\minecraft\tags\blocks\wooden_pressure_plates.json
-25464ebfa1d7d4e755e2b2744c46b2e30fe3287a data\minecraft\tags\blocks\mineable\pickaxe.json
+6236a10b36e57a940dfbc0986c4bdd77b62d00f1 data\minecraft\tags\blocks\mineable\pickaxe.json
 c29f1b461549ca333df96e6faff518f4b16b75ef data\minecraft\tags\blocks\wooden_stairs.json
-1c33610cc421525903cea74bd09287c4b0138a16 data\minecraft\tags\blocks\walls.json
+a1efe11b726e62ad0d76f85b7fbcda0a9a46d605 data\minecraft\tags\blocks\walls.json
 ad93c9a2eb930d87b7bd8d3751f403d25e7e6afb data\minecraft\tags\blocks\fence_gates.json
-29cccb93fa975494dec222277deff55384c917e4 data\minecraft\tags\blocks\stairs.json
+7b9815b68a52d676b5b3b2c9ffc2d46f80a2e8b9 data\minecraft\tags\blocks\stairs.json
 704b4f365892faf1925e2e5dde8d04fa6525d275 data\minecraft\tags\blocks\fences.json
 28a2171009aea54514f538572ba28b7b037e28dd data\minecraft\tags\blocks\stone_pressure_plates.json
 10065c04bc5ececb57810384d127fdc29c05c22f data\minecraft\tags\blocks\mineable\hoe.json
 4110d839569a4264f4da157d77548e540d4c24e1 data\minecraft\tags\blocks\mineable\axe.json
+af81ebdd5faadfcfd7f1b46d2500ed498f8d835a data\minecraft\tags\blocks\slabs.json
 f63df9f284f92eb5a2a6837d80a753bf0dd0cfe3 data\minecraft\tags\blocks\needs_iron_tool.json
-276e66dc832b3488fdd2537ea0b1c88e2de3821f data\minecraft\tags\blocks\slabs.json
 67179bad3d7856e0e7bde884336a30cfd06fe799 data\minecraft\tags\blocks\wooden_buttons.json
 2523e0c8e361118afe14247da29ba4524edcf3b3 data\minecraft\tags\blocks\buttons.json
 a4ca3a105cba75915ca3b05bbc13b3aba96a0376 data\minecraft\tags\blocks\wooden_trapdoors.json

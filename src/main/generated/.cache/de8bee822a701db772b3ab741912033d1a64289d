@@ -1,6 +1,6 @@
-// 1.20.1	2024-04-16T11:05:22.8488876	OuterWorld/Tags for minecraft:item
-a4ca3a105cba75915ca3b05bbc13b3aba96a0376 data\minecraft\tags\items\wooden_trapdoors.json
+// 1.20.1	2024-04-18T02:05:10.1336763	OuterWorld/Tags for minecraft:item
 a0d34036d005af6c027a2673346520ae9deb3cfb data\minecraft\tags\items\planks.json
+a4ca3a105cba75915ca3b05bbc13b3aba96a0376 data\minecraft\tags\items\wooden_trapdoors.json
 d04733c67f5bacfba92104b256a1ced0afbb1aa8 data\minecraft\tags\items\boats.json
 0a48b5b49ba37e3a86f4b648406380c44943a74c data\minecraft\tags\items\shovels.json
 2523e0c8e361118afe14247da29ba4524edcf3b3 data\minecraft\tags\items\stone_buttons.json
@@ -12,12 +12,12 @@ f010c7d0444c44afc1443b60645cc6abfd83c717 data\minecraft\tags\items\completes_fin
 2f8f057971d50f21c8bc1f4862a812307b265228 data\minecraft\tags\items\trimmable_armor.json
 383d83cd2124e98a9af600eaedc3391b21b0910d data\outerworld\tags\items\autumn_maple_logs.json
 56a46e6bf11bbf88e47b83de75f8f38fdc038771 data\minecraft\tags\items\stone_crafting_materials.json
-29cccb93fa975494dec222277deff55384c917e4 data\minecraft\tags\items\stairs.json
+00e7d39d6cbb93fe00f66169418649264ee349ae data\minecraft\tags\items\stairs.json
 ad93c9a2eb930d87b7bd8d3751f403d25e7e6afb data\minecraft\tags\items\fence_gates.json
 46a6ab93b26f8350ed80e2cd40d1457daa9126b7 data\minecraft\tags\items\signs.json
-614f1470da2955bb2bfc8569132a3cccea4d1d88 data\minecraft\tags\items\wooden_slabs.json
 8528b18e8030242c2429dc7a90489771ce0089e5 data\minecraft\tags\items\wooden_doors.json
-276e66dc832b3488fdd2537ea0b1c88e2de3821f data\minecraft\tags\items\slabs.json
+614f1470da2955bb2bfc8569132a3cccea4d1d88 data\minecraft\tags\items\wooden_slabs.json
+507becc35d098b6b34675fc9ff4cb102dda77966 data\minecraft\tags\items\slabs.json
 9f9d6b9715452098f1fb1e7cc832bdd10729a49e data\minecraft\tags\items\pickaxes.json
 037db3eef1cccd09b0e624f3a36911bbda3fb6e6 data\minecraft\tags\items\saplings.json
 f010c7d0444c44afc1443b60645cc6abfd83c717 data\minecraft\tags\items\logs_that_burn.json
@@ -28,5 +28,5 @@ f010c7d0444c44afc1443b60645cc6abfd83c717 data\minecraft\tags\items\logs_that_bur
 271f89788515d39c96c160fd04b7f2ecc68ec261 data\minecraft\tags\items\wooden_pressure_plates.json
 67179bad3d7856e0e7bde884336a30cfd06fe799 data\minecraft\tags\items\wooden_buttons.json
 fe93ea657c63cd2934832219e7f10c08af195ed5 data\minecraft\tags\items\swords.json
-1c33610cc421525903cea74bd09287c4b0138a16 data\minecraft\tags\items\walls.json
+6bd69d82afb32784266f4e1c84340804d2bdc787 data\minecraft\tags\items\walls.json
 dc37295a1b177b0ed490ada97a02f2c9ab910922 data\minecraft\tags\items\chest_boats.json

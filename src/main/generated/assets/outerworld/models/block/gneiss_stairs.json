@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "outerworld:block/gneiss",
+    "side": "outerworld:block/gneiss",
+    "top": "outerworld:block/gneiss"
+  }
+}
